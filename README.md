@@ -1,6 +1,7 @@
 # My_Portfolio
 
-A simple "Portfolio" web page
+A portfolio web page with professional details as regards
+projects done and contact detail.
 
 ## Built With
 

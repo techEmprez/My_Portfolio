@@ -1,11 +1,16 @@
 body {
   width: 375px;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
 }
 
 .navLogo {
   position: absolute;
   width: 111px;
   height: 74px;
+  left: 0px;
+  top: 0px;
 }
 
 .navHam {
@@ -18,15 +23,15 @@ body {
 
 .headline h1 {
   position: absolute;
-  width: 220px;
-  height: 100px;
+  width: 288px;
+  height: 336px;
   left: 16px;
   top: 104px;
   font-family: "Playfair Display", sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 50px;
-  line-height: 100%;
+  font-size: 40px;
+  line-height: 50px;
   color: #1a2236;
 }
 
@@ -48,10 +53,18 @@ body {
 .despButton {
   box-sizing: border-box;
   position: absolute;
-  width: 288px;
+  width: 280px;
   height: 50px;
   left: 16px;
   top: 390px;
   background: #1a2236;
   color: white;
+}
+
+.base {
+  position: absolute;
+  width: 320px;
+  height: 160px;
+  left: 0px;
+  top: 472px;
 }
