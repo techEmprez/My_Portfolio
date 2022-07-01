@@ -5,8 +5,8 @@ body {
 
 .navLogo {
   position: absolute;
-  left: 0px;
-  top: 0px;
+  left: 0em;
+  top: 0em;
   width: 111px;
   height: 74px;
 }
