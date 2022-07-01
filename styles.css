@@ -5,7 +5,7 @@ body {
 
 .navLogo {
   position: absolute;
-  top: 1px;
+  top: 0;
   width: 111px;
   height: 74px;
 }
