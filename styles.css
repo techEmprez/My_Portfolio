@@ -5,6 +5,7 @@ body {
 
 .navLogo {
   position: absolute;
+  left: 0;
   top: 0;
   width: 111px;
   height: 74px;
@@ -62,6 +63,6 @@ body {
   position: absolute;
   width: 320px;
   height: 160px;
-  left: 0px;
+  left: 0;
   top: 472px;
 }
