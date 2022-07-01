@@ -1,0 +1,68 @@
+body {
+  width: 375px;
+  overflow-x: hidden;
+}
+
+.navLogo {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 111px;
+  height: 74px;
+}
+
+.navHam {
+  position: absolute;
+  width: 20px;
+  height: 14px;
+  left: 284px;
+  top: 19px;
+}
+
+.headline h1 {
+  position: absolute;
+  width: 288px;
+  height: 336px;
+  left: 16px;
+  top: 104px;
+  font-family: "Playfair Display", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 50px;
+  color: #1a2236;
+}
+
+.description {
+  position: absolute;
+  width: 288px;
+  height: 126px;
+  left: 16px;
+  top: 224px;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: -0.01em;
+  color: #1a2236;
+}
+
+.despButton {
+  box-sizing: border-box;
+  position: absolute;
+  width: 288px;
+  height: 50px;
+  left: 16px;
+  top: 390px;
+  background: #1a2236;
+  color: white;
+}
+
+.base {
+  position: absolute;
+  width: 320px;
+  height: 160px;
+  left: 0;
+  top: 472px;
+}
