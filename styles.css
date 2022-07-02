@@ -247,3 +247,25 @@ body {
   border: 0.333333px solid rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(1px);
 }
+
+.projImg6 {
+  position: absolute;
+  width: 320%;
+  height: 186px;
+  left: 0px;
+  top: 2593px;
+  background: url("./images/project6.png");
+  background-repeat: no-repeat;
+  border: 0.333333px solid rgba(255, 255, 255, 0.1);
+}
+
+.container6 {
+  position: absolute;
+  width: 320px;
+  height: 156px;
+  left: 0px;
+  top: 2781px;
+  background: #1a2236;
+  border: 0.333333px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(1px);
+}
