@@ -269,3 +269,17 @@ body {
   border: 0.333333px solid rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(1px);
 }
+
+.aboutMe {
+  position: absolute;
+  width: 134px;
+  height: 50px;
+  left: 16px;
+  top: 2950px;
+  font-family: "Playfair Display", sans-serif;
+  font-style: normal;
+  font-weight: 100;
+  font-size: 50px;
+  line-height: 100%;
+  color: #1a2236;
+}
