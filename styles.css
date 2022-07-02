@@ -1,14 +1,16 @@
 body {
-  width: 375px;
+  width: 100%;
+  margin: 0;
+  padding: 0;
   overflow-x: hidden;
 }
 
 .navLogo {
   position: absolute;
-  left: 0;
-  top: 0;
   width: 111px;
   height: 74px;
+  left: 0;
+  top: 0;
 }
 
 .navHam {
@@ -51,7 +53,7 @@ body {
 .despButton {
   box-sizing: border-box;
   position: absolute;
-  width: 288px;
+  width: 280px;
   height: 50px;
   left: 16px;
   top: 390px;
@@ -65,4 +67,463 @@ body {
   height: 160px;
   left: 0;
   top: 472px;
+}
+
+.projects {
+  position: absolute;
+  width: 100%;
+  height: 50px;
+  left: 16px;
+  top: 630px;
+  font-family: "Playfair Display", sans-serif;
+  font-style: bold;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 100%;
+  color: #1a2236;
+}
+
+.projImg {
+  position: absolute;
+  width: 320%;
+  height: 186px;
+  left: 0;
+  top: 754px;
+  background: url("./images/project1.png");
+  background-repeat: no-repeat;
+  border: 0.333333px solid rgba(255, 255, 255, 0.1);
+}
+
+.container {
+  position: absolute;
+  width: 320px;
+  height: 180px;
+  left: 0;
+  top: 940px;
+  background: #1a2236;
+  border: 0.333333px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(1px);
+}
+
+.projName {
+  position: absolute;
+  width: 280px;
+  height: 50px;
+  left: 16px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-size: 20px;
+  top: 5px;
+  color: #fff;
+}
+
+.stacks {
+  position: absolute;
+  left: -26px;
+  margin-top: 70px;
+}
+
+.stacks li {
+  height: 20px;
+  padding: 5px;
+  margin: 3px;
+  list-style: none;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  display: inline;
+  font-weight: 200;
+  font-size: 12px;
+  color: #1a2236;
+  background: #98dede;
+}
+
+.projView {
+  position: absolute;
+  width: 176px;
+  height: 40px;
+  left: 16px;
+  top: 110px;
+  font-weight: 500;
+  font-size: 16px;
+  text-align: left;
+  color: #fff;
+  background: #1a2236;
+  border: 1px solid #fff;
+  backdrop-filter: blur(1px);
+}
+
+.arrow {
+  position: absolute;
+  width: 20.57px;
+  height: 15.35px;
+  left: 135px;
+  color: #fff;
+}
+
+.projImg2 {
+  position: absolute;
+  width: 320%;
+  height: 186px;
+  left: 0;
+  top: 1120px;
+  background: url("./images/project2.png");
+  background-repeat: no-repeat;
+  border: 0.333333px solid rgba(255, 255, 255, 0.1);
+}
+
+.container2 {
+  position: absolute;
+  width: 320px;
+  height: 180px;
+  left: 0;
+  top: 1308px;
+  background: #1a2236;
+  border: 0.333333px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(1px);
+}
+
+.projImg3 {
+  position: absolute;
+  width: 320%;
+  height: 186px;
+  left: 0;
+  top: 1489px;
+  background: url("./images/project3.png");
+  background-repeat: no-repeat;
+  border: 0.333333px solid rgba(255, 255, 255, 0.1);
+}
+
+.container3 {
+  position: absolute;
+  width: 320px;
+  height: 180px;
+  left: 0;
+  top: 1677px;
+  background: #1a2236;
+  border: 0.333333px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(1px);
+}
+
+.projImg4 {
+  position: absolute;
+  width: 320%;
+  height: 186px;
+  left: 0;
+  top: 1857px;
+  background: url("./images/project4.png");
+  background-repeat: no-repeat;
+  border: 0.333333px solid rgba(255, 255, 255, 0.1);
+}
+
+.container4 {
+  position: absolute;
+  width: 320px;
+  height: 180px;
+  left: 0;
+  top: 2046px;
+  background: #1a2236;
+  border: 0.333333px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(1px);
+}
+
+.projImg5 {
+  position: absolute;
+  width: 320%;
+  height: 186px;
+  left: 0;
+  top: 2226px;
+  background: url("./images/project5.png");
+  background-repeat: no-repeat;
+  border: 0.333333px solid rgba(255, 255, 255, 0.1);
+}
+
+.container5 {
+  position: absolute;
+  width: 320px;
+  height: 180px;
+  left: 0;
+  top: 2413px;
+  background: #1a2236;
+  border: 0.333333px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(1px);
+}
+
+.projImg6 {
+  position: absolute;
+  width: 320%;
+  height: 186px;
+  left: 0;
+  top: 2593px;
+  background: url("./images/project6.png");
+  background-repeat: no-repeat;
+  border: 0.333333px solid rgba(255, 255, 255, 0.1);
+}
+
+.container6 {
+  position: absolute;
+  width: 320px;
+  height: 156px;
+  left: 0;
+  top: 2781px;
+  background: #1a2236;
+  border: 0.333333px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(1px);
+}
+
+.aboutMe {
+  position: absolute;
+  width: 134px;
+  height: 50px;
+  left: 16px;
+  top: 2950px;
+  font-family: "Playfair Display", sans-serif;
+  font-style: normal;
+  font-weight: 100;
+  font-size: 50px;
+  line-height: 100%;
+  color: #1a2236;
+}
+
+.aboutDescription {
+  position: absolute;
+  width: 288px;
+  height: 126px;
+  left: 16px;
+  top: 3075px;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #1a2236;
+}
+
+.aboutButton {
+  box-sizing: border-box;
+  position: absolute;
+  width: 288px;
+  height: 50px;
+  left: 16px;
+  top: 3254px;
+  background: #1a2236;
+}
+
+.aboutButton p {
+  position: absolute;
+  top: -2px;
+  left: 85px;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #fff;
+}
+
+.aboutArrow1 {
+  position: absolute;
+  left: 188px;
+  top: 11px;
+}
+
+.aboutArrow {
+  position: absolute;
+  top: 15px;
+  left: 182px;
+}
+
+.languages {
+  position: absolute;
+  width: 289px;
+  height: 289px;
+  left: 16px;
+  top: 3345px;
+  background: #1c528a;
+}
+
+.languages p {
+  position: absolute;
+  width: 116px;
+  height: 30px;
+  left: 45px;
+  top: 20px;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 30px;
+  color: #fff;
+}
+
+.languages ul {
+  position: absolute;
+  width: 178px;
+  height: 135px;
+  left: 16px;
+  top: 80px;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  letter-spacing: -0.0525em;
+  color: #fff;
+}
+
+.languageTag {
+  position: absolute;
+  width: 102px;
+  height: 102px;
+  left: 187px;
+  top: 185px;
+  opacity: 0.5;
+}
+
+.frameworks {
+  position: absolute;
+  width: 289px;
+  height: 289px;
+  left: 16px;
+  top: 3647px;
+  background: #e2505c;
+}
+
+.frameworks p {
+  position: absolute;
+  width: 116px;
+  height: 30px;
+  left: 45px;
+  top: 20px;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 30px;
+  color: #fff;
+}
+
+.frameworks ul {
+  position: absolute;
+  width: 178px;
+  height: 135px;
+  left: 16px;
+  top: 80px;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  letter-spacing: -0.0525em;
+  color: #fff;
+}
+
+.languageTag1 {
+  position: absolute;
+  width: 102px;
+  height: 102px;
+  left: 187px;
+  top: 185px;
+  opacity: 0.5;
+  transform: rotate(0.53deg);
+}
+
+.skills {
+  position: absolute;
+  width: 289px;
+  height: 289px;
+  left: 15px;
+  top: 3949px;
+  background: #febf52;
+}
+
+.skills p {
+  position: absolute;
+  width: 116px;
+  height: 30px;
+  left: 45px;
+  top: 20px;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 30px;
+  color: #fff;
+}
+
+.skills ul {
+  position: absolute;
+  width: 178px;
+  height: 135px;
+  left: 16px;
+  top: 80px;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  letter-spacing: -0.0525em;
+  color: #fff;
+}
+
+.skillsTag {
+  position: absolute;
+  width: 102px;
+  height: 102px;
+  left: 172px;
+  top: 185px;
+  opacity: 0.5;
+}
+
+.skills1 {
+  position: absolute;
+  left: 55%;
+  right: 89.14%;
+  top: 68%;
+  bottom: 74.49%;
+  opacity: 0.5;
+}
+
+.skills2 {
+  position: absolute;
+  left: 54%;
+  right: 89.14%;
+  top: 77%;
+  bottom: 74.49%;
+  opacity: 0.5;
+}
+
+.skills3 {
+  position: absolute;
+  left: 55%;
+  right: 89.14%;
+  top: 85%;
+  bottom: 74.49%;
+  opacity: 0.5;
+}
+
+.skills11 {
+  position: absolute;
+  left: 96%;
+  right: 89.14%;
+  top: 68%;
+  bottom: 74.49%;
+  opacity: 0.5;
+}
+
+.skills22 {
+  position: absolute;
+  left: 96%;
+  right: 89.14%;
+  top: 77%;
+  bottom: 74.49%;
+  opacity: 0.5;
+}
+
+.skills33 {
+  position: absolute;
+  left: 96%;
+  right: 89.14%;
+  top: 85%;
+  bottom: 74.49%;
+  opacity: 0.5;
 }
