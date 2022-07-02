@@ -1,14 +1,16 @@
 body {
-  width: 375px;
+  width: 100%;
+  margin: 0;
+  padding: 0;
   overflow-x: hidden;
 }
 
 .navLogo {
   position: absolute;
-  left: 0;
-  top: 0;
   width: 111px;
   height: 74px;
+  left: 0px;
+  top: 0px;
 }
 
 .navHam {
@@ -51,7 +53,7 @@ body {
 .despButton {
   box-sizing: border-box;
   position: absolute;
-  width: 288px;
+  width: 280px;
   height: 50px;
   left: 16px;
   top: 390px;
@@ -63,6 +65,185 @@ body {
   position: absolute;
   width: 320px;
   height: 160px;
-  left: 0;
+  left: 0px;
   top: 472px;
+}
+
+.projects {
+  position: absolute;
+  width: 100%;
+  height: 50px;
+  left: 16px;
+  top: 630px;
+  font-family: "Playfair Display";
+  font-style: bold;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 100%;
+  color: #1a2236;
+}
+
+.projImg {
+  position: absolute;
+  width: 320%;
+  height: 186px;
+  left: 0px;
+  top: 754px;
+  background: url("./images/project1.png");
+  background-repeat: no-repeat;
+  border: 0.333333px solid rgba(255, 255, 255, 0.1);
+}
+
+.container {
+  position: absolute;
+  width: 320px;
+  height: 180px;
+  left: 0px;
+  top: 940px;
+  background: #1a2236;
+  border: 0.333333px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(1px);
+}
+
+.projName {
+  position: absolute;
+  width: 280px;
+  height: 50px;
+  left: 16px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-size: 20px;
+  top: 5px;
+  color: #ffffff;
+}
+
+.stacks {
+  position: absolute;
+  left: -26px;
+  margin-top: 70px;
+}
+
+.stacks li {
+  height: 20px;
+  padding: 5px;
+  margin: 3px;
+  list-style: none;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  display: inline;
+  font-weight: 200;
+  font-size: 12px;
+  color: #1a2236;
+  background: #98dede;
+}
+
+.projView {
+  position: absolute;
+  width: 176px;
+  height: 40px;
+  left: 16px;
+  top: 110px;
+  font-weight: 500;
+  font-size: 16px;
+  text-align: left;
+  color: #ffffff;
+  background: #1a2236;
+  border: 1px solid #ffffff;
+  backdrop-filter: blur(1px);
+}
+
+.arrow {
+  position: absolute;
+  width: 20.57px;
+  height: 15.35px;
+  left: 135px;
+  color: #ffffff;
+}
+
+.projImg2 {
+  position: absolute;
+  width: 320%;
+  height: 186px;
+  left: 0px;
+  top: 1120px;
+  background: url("./images/project2.png");
+  background-repeat: no-repeat;
+  border: 0.333333px solid rgba(255, 255, 255, 0.1);
+}
+
+.container2 {
+  position: absolute;
+  width: 320px;
+  height: 180px;
+  left: 0px;
+  top: 1308px;
+  background: #1a2236;
+  border: 0.333333px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(1px);
+}
+
+.projImg3 {
+  position: absolute;
+  width: 320%;
+  height: 186px;
+  left: 0px;
+  top: 1489px;
+  background: url("./images/project3.png");
+  background-repeat: no-repeat;
+  border: 0.333333px solid rgba(255, 255, 255, 0.1);
+}
+
+.container3 {
+  position: absolute;
+  width: 320px;
+  height: 180px;
+  left: 0px;
+  top: 1677px;
+  background: #1a2236;
+  border: 0.333333px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(1px);
+}
+
+.projImg4 {
+  position: absolute;
+  width: 320%;
+  height: 186px;
+  left: 0px;
+  top: 1857px;
+  background: url("./images/project4.png");
+  background-repeat: no-repeat;
+  border: 0.333333px solid rgba(255, 255, 255, 0.1);
+}
+
+.container4 {
+  position: absolute;
+  width: 320px;
+  height: 180px;
+  left: 0px;
+  top: 2046px;
+  background: #1a2236;
+  border: 0.333333px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(1px);
+}
+
+.projImg5 {
+  position: absolute;
+  width: 320%;
+  height: 186px;
+  left: 0px;
+  top: 2226px;
+  background: url("./images/project5.png");
+  background-repeat: no-repeat;
+  border: 0.333333px solid rgba(255, 255, 255, 0.1);
+}
+
+.container5 {
+  position: absolute;
+  width: 320px;
+  height: 180px;
+  left: 0px;
+  top: 2413px;
+  background: #1a2236;
+  border: 0.333333px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(1px);
 }
