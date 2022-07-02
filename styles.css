@@ -66,7 +66,7 @@ body {
   width: 320px;
   height: 160px;
   left: 0;
-  top: 472;
+  top: 472px;
 }
 
 .projects {
@@ -308,7 +308,7 @@ body {
   background: #1a2236;
 }
 
-.aboutButton h3 {
+.aboutButton p {
   position: absolute;
   top: -2px;
   left: 85px;
@@ -394,12 +394,12 @@ body {
   height: 30px;
   left: 45px;
   top: 20px;
-  font-family: "Poppins", sans-serif;
+  font-family: "Poppins";
   font-style: normal;
   font-weight: 800;
   font-size: 20px;
   line-height: 30px;
-  color: #fff;
+  color: #ffffff;
 }
 
 .frameworks ul {
@@ -414,7 +414,7 @@ body {
   font-size: 15px;
   line-height: 27px;
   letter-spacing: -0.0525em;
-  color: #fff;
+  color: #ffffff;
 }
 
 .languageTag1 {
@@ -442,12 +442,12 @@ body {
   height: 30px;
   left: 45px;
   top: 20px;
-  font-family: "Poppins", sans-serif;
+  font-family: "Poppins";
   font-style: normal;
   font-weight: 800;
   font-size: 20px;
   line-height: 30px;
-  color: #fff;
+  color: #ffffff;
 }
 
 .skills ul {
@@ -462,7 +462,7 @@ body {
   font-size: 15px;
   line-height: 27px;
   letter-spacing: -0.0525em;
-  color: #fff;
+  color: #ffffff;
 }
 
 .skillsTag {
