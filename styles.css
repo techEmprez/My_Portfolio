@@ -542,7 +542,7 @@ body {
 }
 
 .contact-form h3 {
-  font-family: "Playfair Display";
+  font-family: "Playfair Display", Helvetica, sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 50px;
@@ -552,7 +552,7 @@ body {
 }
 
 .contact-form p {
-  font-family: "Poppins";
+  font-family: "Poppins", Helvetica, sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -576,7 +576,7 @@ textarea {
 textarea {
   text-align: left;
   padding: 10px 0 0 10px;
-  font-family: "Poppins";
+  font-family: "Poppins", Helvetica, sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -594,7 +594,7 @@ input {
 button {
   background: #1a2236;
   width: 103%;
-  font-family: "Poppins";
+  font-family: "Poppins", Helvetica, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -607,23 +607,23 @@ button {
 }
 
 button:hover {
-  border: 1px solid #1A2236;
-  background-color: #E5E5E5;
-  color: #1A2236;
+  border: 1px solid #1a2236;
+  background-color: #e5e5e5;
+  color: #1a2236;
 }
 
 button:focus {
-  border: 2px solid #1A2236;
+  border: 2px solid #1a2236;
 }
 
 input:focus {
-  background: #ffffff;
+  background: #fff;
   border: 1px solid #1a2236;
   border-radius: 4px;
 }
 
 textarea:focus {
-  background: #ffffff;
+  background: #fff;
   border: 1px solid #1a2236;
   border-radius: 4px;
 }
