@@ -5,12 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Playfair Display" rel="stylesheet" />
     <title>My Portfolio</title>
   </head>
   <body>
     <nav class="navLogo">
       <a href="./index.html">
-        <img src="./images/navlogo.png" alt="" />
+        <img src="./images/navlogo.png" alt="navLogo" />
       </a>
       <img class="navHam" src="./images/hamburger.png" alt="" />
     </nav>
@@ -194,19 +196,30 @@
       </section>
 
       <section>
-        <div class="contact-form">
+        <div class="contact-section">
           <img src="./images/image_geometry_3.png" alt="" />
-          <h3>Get started</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, s ed do
-            eiusmod tempor incididunt ut labore et dolore magna.
-          </p>
-          <form method="post">
-            <input type="text" placeholder="Your name" required />
-            <input type="email" placeholder="Your email" required />
-            <textarea>Enter your message here... </textarea>
-            <button type="submit">Start Collaboration</button>
-          </form>
+          <div class="contact-form">
+            <h3>Get started</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, s ed do eiusmod tempor <br />
+              incididunt ut labore et dolore magna.
+            </p>
+            <form action="https://formspree.io/f/xknyljor" class="form-area" method="post">
+              <input name="name" type="text" maxlength="30" placeholder="Your name" required />
+              <input name="email" type="email" placeholder="Your email" required />
+              <textarea
+                name="message"
+                id="message"
+                maxlength="500"
+                placeholder="Enter your message here..."
+                cols="30"
+                rows="6"
+                required
+              ></textarea>
+
+              <button type="submit">Start Collaboration</button>
+            </form>
+          </div>
         </div>
       </section>
     </section>

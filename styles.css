@@ -528,11 +528,102 @@ body {
   opacity: 0.5;
 }
 
-.contact-form {
+.contact-section {
   position: absolute;
   width: 100%;
   height: 813px;
   left: 0;
   top: 4288px;
   background: #f9f9fa;
+}
+
+.contact-form {
+  padding: 0 20px;
+}
+
+.contact-form h3 {
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 100%;
+  color: #1a2236;
+  padding-bottom: 10px;
+}
+
+.contact-form p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: -0.01em;
+  color: #1a2236;
+}
+
+.form-area {
+  text-align: center;
+  margin: 0 auto;
+}
+
+input,
+textarea {
+  border: 1px solid #dfdfe0;
+  border-radius: 4px;
+  width: 100%;
+}
+
+textarea {
+  text-align: left;
+  padding: 10px 0 0 10px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #7d7c84;
+  /* width: 98%; */
+}
+
+input {
+  height: 50px;
+  margin-bottom: 10px;
+  padding-left: 10px;
+}
+
+button {
+  background: #1a2236;
+  width: 103%;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #fff;
+  margin-top: 15px;
+  padding: 7px;
+  cursor: pointer;
+}
+
+button:hover {
+  border: 1px solid #1A2236;
+  background-color: #E5E5E5;
+  color: #1A2236;
+}
+
+button:focus {
+  border: 2px solid #1A2236;
+}
+
+input:focus {
+  background: #ffffff;
+  border: 1px solid #1a2236;
+  border-radius: 4px;
+}
+
+textarea:focus {
+  background: #ffffff;
+  border: 1px solid #1a2236;
+  border-radius: 4px;
 }
