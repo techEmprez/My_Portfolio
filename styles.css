@@ -119,7 +119,6 @@ body {
 
 .stacks {
   position: absolute;
-  /* display: flex; */
   left: -26px;
   margin-top: 70px;
 }
