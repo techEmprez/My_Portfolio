@@ -119,18 +119,19 @@ body {
 
 .stacks {
   position: absolute;
+  /* display: flex; */
   left: -26px;
   margin-top: 70px;
 }
 
 .stacks li {
+  float: left;
   height: 20px;
   padding: 5px;
   margin: 3px;
   list-style: none;
   font-family: "Poppins", sans-serif;
   font-style: normal;
-  display: inline;
   font-weight: 200;
   font-size: 12px;
   color: #1a2236;
@@ -526,4 +527,13 @@ body {
   top: 85%;
   bottom: 74.49%;
   opacity: 0.5;
+}
+
+.contact-form {
+  position: absolute;
+  width: 100%;
+  height: 813px;
+  left: 0;
+  top: 4288px;
+  background: #f9f9fa;
 }
