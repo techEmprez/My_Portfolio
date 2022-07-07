@@ -5,223 +5,265 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
-    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet" />
-    <title>My Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/579b112cc6.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>techEmpress</title>
   </head>
   <body>
-    <nav class="navLogo">
-      <a href="./index.html">
-        <img src="./images/navlogo.png" alt="navLogo" />
-      </a>
-      <img class="navHam" src="./images/hamburger.png" alt="" />
+    <a class="navLogo" href="./index.html">
+      <img src="./images/image_geometry_1.svg" alt="navLogo" />
+    </a>
+    <nav class="hamburger">
+      <img src="./images/ic_menu.svg" alt="hamburger" />
     </nav>
-    <section>
-      <div class="headline">
-        <h1>Charlie Giorgania</h1>
-        <p class="description">
-          Hello! I am a software developer! I can<br />
-          help you build a product, feature or <br />
-          website. Taka a look of my works.<br />
-          If you like what you see and have a <br />
-          project you need coded, don’t hesitate <br />
-          and contact me.
-        </p>
 
-        <button class="despButton" type="submit">Start collaboration</button>
-
-        <img class="base" src="./images/base.png" alt="" />
-      </div>
-
-      <section class="projectCards">
-        <div>
-          <h2 class="projects">Projects</h2>
-        </div>
-
-        <div class="projImg"></div>
-
-        <div class="container">
-          <p class="projName">Project name goes here</p>
-          <ul class="stacks">
-            <li>HTML/CSS</li>
-            <li>Ruby on Rails</li>
-            <li>JavaScript</li>
-          </ul>
-
-          <button type="submit" class="projView">
-            See this Project
-            <img class="arrow" src="./images/arrow.png" alt="" />
-          </button>
-        </div>
-
-        <div class="projImg2"></div>
-
-        <div class="container2">
-          <p class="projName">Project name goes here</p>
-          <ul class="stacks">
-            <li>HTML/CSS</li>
-            <li>Ruby on Rails</li>
-            <li>JavaScript</li>
-          </ul>
-
-          <button type="submit" class="projView">
-            See this Project
-            <img class="arrow2" src="./images/arrow.png" alt="" />
-          </button>
-        </div>
-
-        <div class="projImg3"></div>
-
-        <div class="container3">
-          <p class="projName">Project name goes here</p>
-          <ul class="stacks">
-            <li>HTML/CSS</li>
-            <li>Ruby on Rails</li>
-            <li>JavaScript</li>
-          </ul>
-
-          <button type="submit" class="projView">
-            See this Project
-            <img class="arrow" src="./images/arrow.png" alt="" />
-          </button>
-        </div>
-
-        <div class="projImg4"></div>
-
-        <div class="container4">
-          <p class="projName">Project name goes here</p>
-          <ul class="stacks">
-            <li>HTML/CSS</li>
-            <li>Ruby on Rails</li>
-            <li>JavaScript</li>
-          </ul>
-
-          <button type="submit" class="projView">
-            See this Project
-            <img class="arrow" src="./images/arrow.png" alt="" />
-          </button>
-        </div>
-
-        <div class="projImg5"></div>
-
-        <div class="container5">
-          <p class="projName">Project name goes here</p>
-          <ul class="stacks">
-            <li>HTML/CSS</li>
-            <li>Ruby on Rails</li>
-            <li>JavaScript</li>
-          </ul>
-
-          <button type="submit" class="projView">
-            See this Project
-            <img class="arrow" src="./images/arrow.png" alt="" />
-          </button>
-        </div>
-
-        <div class="projImg6"></div>
-
-        <div class="container6">
-          <p class="projName">Project name goes here</p>
-          <ul class="stacks">
-            <li>HTML/CSS</li>
-            <li>Ruby on Rails</li>
-            <li>JavaScript</li>
-          </ul>
-
-          <button type="submit" class="projView">
-            See this Project
-            <img class="arrow" src="./images/arrow.png" alt="" />
-          </button>
+    <main>
+      <section class="headline-container">
+        <div class="headline-intro">
+          <h1>tech<br />Empress</h1>
+          <p class="headline-description">
+            Hello! I am a software developer! I can help you build a product,
+            feature or website. Taka a look of my works. If you like what you
+            see and have a project you need coded, don’t hesitate and contact
+            me.
+          </p>
+          <a href="#" class="button navy-button">Start Collaboration</a>
         </div>
       </section>
+      <section class="projects">
+        <h2 class="project-heading">Projects</h2>
 
-      <section>
-        <div class="aboutMe"><h2>About</h2></div>
-        <p class="aboutDescription">
-          Lorem ipsum dolor sit amet, consectetur <br />
-          adipiscing elit, sed do eiusmod tempor<br />
-          incididunt ut labore et dolore magna <br />
-          aliqua. Ut enim ad minim veniam,quis<br />
-          nostrud exercitation ullamco laboris nisi<br />
-          ut aliquip ea eiusmod
-        </p>
+        <section class="projects">
+          <img
+            src="./images/project 1.svg"
+            alt="Project 1"
+            class="project-img"
+          />
+          <div class="project-info">
+            <h3 class="project-name">Project name goes here</h3>
+            <div class="language-info">
+              <span class="language">HTML/CSS</span>
+              <span class="language">Ruby on Rails</span>
+              <span class="language">JavaScript</span>
+            </div>
+            <a href="#" class="button navy-button project-view"
+              >See this project <i class="fa-solid fa-arrow-right"></i
+            ></a>
+          </div>
+        </section>
 
-        <div class="aboutButton">
-          <p>Get my CV</p>
-          <img class="aboutArrow1" src="./images/aboutarrow1.png" alt="" />
-          <img class="aboutArrow" src="./images/aboutarrow.png" alt="" />
-        </div>
+        <section class="projects">
+          <img
+            src="./images/project 2.svg"
+            alt="Project 2"
+            class="project-img"
+          />
+          <div class="project-info">
+            <h3 class="project-name">Project name goes here</h3>
+            <div class="language-info">
+              <span class="language">HTML/CSS</span>
+              <span class="language">Ruby on Rails</span>
+              <span class="language">JavaScript</span>
+            </div>
+            <a href="#" class="button navy-button project-view"
+              >See this project <i class="fa-solid fa-arrow-right"></i
+            ></a>
+          </div>
+        </section>
 
-        <div class="languages">
-          <p>Languages</p>
-          <ul>
-            <li>JavaScript (ES5/ES6)</li>
-            <li>Ruby</li>
-            <li>HTML</li>
-            <li>CSS</li>
-          </ul>
-          <img class="languageTag" src="./images/abouttag.png" alt="" />
-        </div>
+        <section class="projects">
+          <img
+            src="./images/project 3.svg"
+            alt="Project 3"
+            class="project-img"
+          />
+          <div class="project-info">
+            <h3 class="project-name">Project name goes here</h3>
+            <div class="language-info">
+              <span class="language">HTML/CSS</span>
+              <span class="language">Ruby on Rails</span>
+              <span class="language">JavaScript</span>
+            </div>
+            <a href="#" class="button navy-button project-view"
+              >See this project <i class="fa-solid fa-arrow-right"></i
+            ></a>
+          </div>
+        </section>
 
-        <div class="frameworks">
-          <p>Frameworks</p>
-          <ul>
-            <li>Bootstrap</li>
-            <li>Ruby on rails</li>
-            <li>RSpec</li>
-            <li>Capibara</li>
-            <li>Selenium</li>
-          </ul>
-          <img class="languageTag" src="./images/about4.png" alt="" />
-          <img class="languageTag1" src="./images/about44.png" alt="" />
-        </div>
+        <section class="projects">
+          <img
+            src="./images/project 4.svg"
+            alt="Project 4"
+            class="project-img"
+          />
+          <div class="project-info">
+            <h3 class="project-name">Project name goes here</h3>
+            <div class="language-info">
+              <span class="language">HTML/CSS</span>
+              <span class="language">Ruby on Rails</span>
+              <span class="language">JavaScript</span>
+            </div>
+            <a href="#" class="button navy-button project-view"
+              >See this project <i class="fa-solid fa-arrow-right"></i
+            ></a>
+          </div>
+        </section>
 
-        <div class="skills">
-          <p>Skills</p>
-          <ul>
-            <li>Codekit</li>
-            <li>Codepen</li>
-            <li>GitHub</li>
-            <li>GitLab</li>
-            <li>Terminal</li>
-          </ul>
-          <img class="skillsTag" src="./images/about3.png" alt="" />
-          <img class="skills1" src="./images/skills1.png" alt="" />
-          <img class="skills2" src="./images/skills2.png" alt="" />
-          <img class="skills3" src="./images/skills3.png" alt="" />
-          <img class="skills11" src="./images/skills11.png" alt="" />
-          <img class="skills22" src="./images/skills22.png" alt="" />
-          <img class="skills33" src="./images/skills33.png" alt="" />
-        </div>
+        <section class="projects">
+          <img
+            src="./images/project 5.svg"
+            alt="Project 5"
+            class="project-img"
+          />
+          <div class="project-info">
+            <h3 class="project-name">Project name goes here</h3>
+            <div class="language-info">
+              <span class="language">HTML/CSS</span>
+              <span class="language">Ruby on Rails</span>
+              <span class="language">JavaScript</span>
+            </div>
+            <a href="#" class="button navy-button project-view"
+              >See this project <i class="fa-solid fa-arrow-right"></i
+            ></a>
+          </div>
+        </section>
+
+        <section class="projects">
+          <img
+            src="./images/project 6.svg"
+            alt="Project 6"
+            class="project-img"
+          />
+          <div class="project-info">
+            <h3 class="project-name">Project name goes here</h3>
+            <div class="language-info">
+              <span class="language">HTML/CSS</span>
+              <span class="language">Ruby on Rails</span>
+              <span class="language">JavaScript</span>
+            </div>
+            <a href="#" class="button navy-button project-view"
+              >See this project <i class="fa-solid fa-arrow-right"></i
+            ></a>
+          </div>
+        </section>
+      </section>
       </section>
 
-      <section>
-        <div class="contact-section">
-          <img src="./images/image_geometry_3.png" alt="" />
-          <div class="contact-form">
-            <h3>Get started</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, s ed do eiusmod tempor <br />
-              incididunt ut labore et dolore magna.
-            </p>
-            <form action="https://formspree.io/f/xknyljor" class="form-area" method="post">
-              <input name="name" type="text" maxlength="30" placeholder="Your name" required />
-              <input name="email" type="email" placeholder="Your email" required />
-              <textarea
-                name="message"
-                id="message"
-                maxlength="500"
-                placeholder="Enter your message here..."
-                cols="30"
-                rows="6"
-                required
-              ></textarea>
+      <section class="about">
+        <h2>About</h2>
+        <p>
+          I'm an innovative Software Developer, proficient with the use of
+          HTML5, CSS3(Less, Sass) JavaScript, React.js, Git, Bootstrap... and
+          currently got a Google scholarship to learn Kotlin for Android.
+          Available for opportunities to both widen my horizon and utilize my
+          acquired skills and Knowledge. I am a goal-setter, extremely
+          passionate about growth and success with a high level of challenge and
+          professionalism...
+        </p>
 
-              <button type="submit">Start Collaboration</button>
-            </form>
+        <a href="#" class="button navy-button get-cv"
+          >Get my CV <i class="fa-solid fa-download"></i
+        ></a>
+
+        <div class="about-container">
+          <div class="about-lang-color">
+            <div class="about-languages">
+              <p class="about-list-heading">Languages</p>
+              <ul class="about-list">
+                <li>JavaScript (ES5/ES6)</li>
+                <li>Ruby</li>
+                <li>HTML</li>
+                <li>CSS</li>
+              </ul>
+            </div>
+          </div>
+          <div class="about-framework-color">
+            <div class="about-framework">
+              <p class="about-list-heading">Frame Works</p>
+              <ul class="about-list">
+                <li>Bootstrap</li>
+                <li>Ruby on rails</li>
+                <li>RSpec</li>
+                <li>Capibara</li>
+                <li>Selenium</li>
+              </ul>
+            </div>
+          </div>
+          <div class="about-skills-color">
+            <div class="about-skills">
+              <p class="about-list-heading">Skills</p>
+              <ul class="about-list">
+                <li>Codekit</li>
+                <li>Codepen</li>
+                <li>GitHub</li>
+                <li>GitLAb</li>
+                <li>Terminal</li>
+              </ul>
+            </div>
           </div>
         </div>
-      </section>
-    </section>
+
+          </section>
+    </main>
+      <footer>
+          <section class="contact-form">
+        <div class="contact-form-background"></div>
+        <div class="contact-form-container">
+          <h2 class="contact-header">Get started</h2>
+              <p>
+                Like what you see?
+                Hit me up with freelance, full-time, part-time or most especially
+                remote opportunities with growth and professionalism
+              </p>
+              <form
+                action="https://formspree.io/f/xknyljor"
+                method="post"
+              >
+                <input
+                  name="name"
+                  id="name"
+                  type="text"
+                  maxlength="30"
+                  placeholder="Your name"
+                  required
+                />
+                <input
+                  name="email"
+                  id="email"
+                  type="email"
+                  placeholder="Your email"
+                  required
+                />
+                <textarea
+                  name="message"
+                  id="message"
+                  maxlength="500"
+                  placeholder="Enter your message here..."
+                  cols="30"
+                  rows="6"
+                  required
+                ></textarea>
+
+            <button type="submit" class="button navy-button contact-button">
+              Start collaboration
+            </button>
+          
+          </form>
+            </div>
+          </div>
+        </section>
+
+      
+
+        </footer>   
   </body>
 </html>
