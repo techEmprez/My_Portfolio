@@ -277,3 +277,34 @@ textarea:valid {
 footer {
   margin-top: 50px;
 }
+
+.footer,
+.ft-get-resume,
+.social-networks {
+  display: flex;
+}
+
+.fa-brands,
+.fa-arrow-up-right-from-square {
+  font-size: 24px;
+}
+
+.footer {
+  background: #1a2236;
+  height: 100px;
+  padding: 20px;
+  gap: 30px;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.ft-get-resume {
+  align-items: center;
+  color: #92dcdc;
+  gap: 20px;
+}
+
+.social-networks {
+  align-items: center;
+  justify-content: space-between;
+}
