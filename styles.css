@@ -52,6 +52,12 @@ button {
   font-weight: 600;
 }
 
+.ft-get-resume {
+  align-items: center;
+  color: #92dcdc;
+  gap: 20px;
+}
+
 .ft-get-resume:hover {
   color: #fff;
 }
@@ -75,14 +81,6 @@ button {
 
 .headline-intro {
   padding: 0 16px;
-}
-
-a.button,
-.about-list,
-.ft-get-resume,
-button {
-  font-size: 16px;
-  font-weight: 600;
 }
 
 .navy-button {
@@ -296,12 +294,6 @@ footer {
   gap: 30px;
   flex-direction: column;
   justify-content: center;
-}
-
-.ft-get-resume {
-  align-items: center;
-  color: #92dcdc;
-  gap: 20px;
 }
 
 .social-networks {
