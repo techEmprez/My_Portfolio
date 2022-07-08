@@ -56,6 +56,7 @@ button {
   align-items: center;
   color: #92dcdc;
   gap: 20px;
+  display: flex;
 }
 
 .ft-get-resume:hover {
@@ -276,12 +277,6 @@ footer {
   margin-top: 50px;
 }
 
-.footer,
-.ft-get-resume,
-.social-networks {
-  display: flex;
-}
-
 .fa-brands,
 .fa-arrow-up-right-from-square {
   font-size: 24px;
@@ -292,11 +287,13 @@ footer {
   height: 100px;
   padding: 20px;
   gap: 30px;
+  display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
 .social-networks {
+  display: flex;
   align-items: center;
   justify-content: space-between;
 }
