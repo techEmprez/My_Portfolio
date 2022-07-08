@@ -338,6 +338,8 @@ footer {
 
   .nav-links a:hover {
     border-bottom: 2px solid #1a2236;
+    font-size: 36px;
+    color: #df4b59;
   }
 
   .hamburger,
