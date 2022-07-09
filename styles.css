@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,800&display=swap");
-
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,500;1,200&display=swap");
 
 * {
@@ -415,7 +414,8 @@ footer {
     grid-template-columns: 1fr 1fr;
     gap: 0;
     grid-area: 1 / 1;
-    background: url("./images/desktop/image_dots_with_teal.svg") no-repeat 100%
+    background:
+      url("./images/desktop/image_dots_with_teal.svg") no-repeat 100%
       100%;
     background-size: 40%;
   }
@@ -430,7 +430,8 @@ footer {
   }
 
   .contact-form {
-    background: url("./images/desktop/image-geometry_6.svg") no-repeat,
+    background:
+      url("./images/desktop/image-geometry_6.svg") no-repeat,
       url("./images/desktop/image-geometry_7.svg") no-repeat 100% 100%;
     background-size: 170px;
     display: flex;
@@ -523,7 +524,8 @@ footer {
   }
 
   .projects-container {
-    background: url("./images/desktop/image_dots.svg") no-repeat 30% 8%,
+    background:
+      url("./images/desktop/image_dots.svg") no-repeat 30% 8%,
       url("images/desktop/image-geometry_5.svg") no-repeat 0 90%,
       url("images/desktop/image-geometry_2.svg") no-repeat 48% 52%,
       url("images/desktop/image-geometry_3.svg") no-repeat 80% 82%,
