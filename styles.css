@@ -113,12 +113,9 @@ button {
 }
 
 .navy-button:hover {
+  border: 1px #1a2236 solid;
   background-color: #fff;
   color: #1a2236;
-}
-
-.navy-button:hover {
-  border: 1px #1a2236 solid;
 }
 
 .navy-button:active {
@@ -424,10 +421,6 @@ footer {
     padding-left: 50px;
   }
 
-  .navy-button {
-    width: 254px;
-  }
-
   .project-wrapper {
     display: grid;
   }
@@ -511,13 +504,16 @@ footer {
   }
 
   .p5 {
+    position: relative;
     width: 90%;
     height: 100px;
+    top: 50px;
   }
 
   .pi5 {
     position: relative;
-    width: 100%;
+    width: 92%;
+    left: 68px;
   }
 
   .project-heading h2 {
@@ -578,6 +574,10 @@ footer {
   }
 
   .pb5 {
+    position: relative;
+    top: 45px;
+    width: 73%;
+    left: 49px;
     order: -1;
   }
 
@@ -602,6 +602,12 @@ footer {
     justify-content: space-between;
     background-color: #1a2236;
     color: #fff;
+  }
+
+  .project-info {
+    padding: 50px;
+    height: 120px;
+    margin: 0 auto;
   }
 
   .project-view:hover {
