@@ -498,40 +498,114 @@ footer {
     gap: 32px;
   }
 
-  .project2,
-  .project3,
-  .project4,
-  .project6,
-  .project-info6,
-  .project-info4,
-  .project-info3 {
+  .p6,
+  .pb3,
+  .pb4,
+  .pb2 {
     display: none;
   }
 
-  .project1 {
-    width: 780px;
-    height: 558px;
-    position: relative;
-    left: 482px;
-    /* top: -150px; */
+  .p1 {
+    width: 98%;
+    height: 600px;
   }
 
-  .project5 {
-    width: 200px;
-    height: 55px;
+  .p5 {
+    width: 90%;
+    height: 100px;
+  }
+
+  .pi5 {
+    position: relative;
+    width: 100%;
   }
 
   .project-heading h2 {
     display: inline-block;
     transform: rotate(-90deg) translateX(-50%);
     /* margin-left: 8%; */
-    padding-right: 80px;
+    padding-right: 50px;
     font-weight: 400;
     font-size: 110px;
     line-height: 100%;
     color: #1a2236;
   }
 
-  .project-heading img {
+  /* EDITING */
+  .projects-container {
+    background: url("./images/desktop/image_dots.svg") no-repeat 30% 8%,
+      url("images/desktop/image-geometry_5.svg") no-repeat 0 90%,
+      url("images/desktop/image-geometry_2.svg") no-repeat 48% 52%,
+      url("images/desktop/image-geometry_3.svg") no-repeat 80% 82%,
+      url("images/desktop/image-geometry_4.svg") no-repeat 45% 90%;
+    background-size: 7%, 15%, 26%, 35%, 7%;
+  }
+
+  .project-wrapper {
+    display: grid;
+    width: 100%;
+    background: none;
+    grid-template-areas:
+      ". . . p1 p1 p1 p1 p1"
+      ". . . p1 p1 p1 p1 p1"
+      "p2 p2 . . . . p5 p5"
+      "p3 p3 p3 p3 p3 . p5 p5"
+      "p3 p3 p3 p3 p3 . . ."
+      ". . . . . p4 p4 .";
+  }
+
+  .p1 {
+    grid-area: p1;
+  }
+  .p2 {
+    grid-area: p2;
+  }
+  .p3 {
+    grid-area: p3;
+  }
+  .p4 {
+    grid-area: p4;
+  }
+  .p6 {
+    grid-area: p6;
+  }
+
+  .p5 {
+    display: flex;
+    flex-direction: column;
+    height: 10%;
+    grid-area: p5;
+  }
+
+  .pb5 {
+    order: -1;
+  }
+
+  .p6,
+  .pb3,
+  .pb4,
+  .pb2 {
+    display: none;
+  }
+
+  h1,
+  h2 {
+    font-size: 80px;
+  }
+
+  a.button {
+    font-size: 0.8rem;
+  }
+
+  .project-view {
+    gap: 0;
+    justify-content: space-between;
+    background-color: #1a2236;
+    color: #fff;
+  }
+
+  .project-view:hover {
+    background-color: #fff;
+    color: #1a2236;
   }
 }
