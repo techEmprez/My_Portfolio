@@ -431,4 +431,70 @@ footer {
   .project-wrapper {
     display: grid;
   }
+
+  .contact-form-background {
+    display: none;
+  }
+
+  .contact-form {
+    background: url("./images/desktop/image-geometry_6.svg") no-repeat,
+      url("./images/desktop/image-geometry_7.svg") no-repeat 100% 100%;
+    background-size: 170px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contact-form-container {
+    padding: 0;
+    width: 542px;
+  }
+
+  form {
+    display: inline;
+    margin-top: 42px 0;
+  }
+
+  input {
+    width: 48%;
+    height: 60px;
+    margin-bottom: 42px;
+  }
+
+  #name {
+    float: left;
+  }
+
+  #email {
+    float: right;
+  }
+
+  textarea {
+    padding: 16px;
+    width: 100%;
+    height: 140px;
+  }
+
+  .navy-button {
+    width: 254px;
+  }
+
+  .contact-button,
+  .get-resume {
+    display: block;
+    margin: 30px auto;
+    margin-left: 133px;
+  }
+
+  .footer {
+    padding: 0 60px;
+    height: 8vh;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .social-networks {
+    gap: 32px;
+  }
 }
