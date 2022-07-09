@@ -382,14 +382,14 @@ footer {
     padding-left: 50px;
   }
 
+  h1,
+  h2 {
+    font-size: 80px;
+  }
+
   .headline-intro h1 {
     margin-top: 100px;
     text-align: left;
-  }
-
-  .navy-button {
-    width: 50%;
-    float: left;
   }
 
   .about-section {
@@ -466,6 +466,8 @@ footer {
 
   .navy-button {
     width: 254px;
+    width: 50%;
+    float: left;
   }
 
   .contact-button,
@@ -497,24 +499,13 @@ footer {
   .p1 {
     width: 98%;
     height: 600px;
-  }
-
-  .p5 {
-    position: relative;
-    width: 90%;
-    height: 100px;
-    top: 50px;
+    grid-area: p1;
   }
 
   .pi5 {
     position: relative;
     width: 92%;
     left: 68px;
-  }
-
-  h1,
-  h2 {
-    font-size: 80px;
   }
 
   .project-heading h2 {
@@ -527,7 +518,6 @@ footer {
     color: #1a2236;
   }
 
-  /* EDITING */
   .projects-container {
     background: url("./images/desktop/image_dots.svg") no-repeat 30% 8%,
       url("images/desktop/image-geometry_5.svg") no-repeat 0 90%,
@@ -548,10 +538,6 @@ footer {
       "p3 p3 p3 p3 p3 . p5 p5"
       "p3 p3 p3 p3 p3 . . ."
       ". . . . . p4 p4 .";
-  }
-
-  .p1 {
-    grid-area: p1;
   }
 
   .p2 {
@@ -575,6 +561,10 @@ footer {
     flex-direction: column;
     height: 10%;
     grid-area: p5;
+    position: relative;
+    width: 90%;
+    height: 100px;
+    top: 50px;
   }
 
   .pb5 {
@@ -583,13 +573,6 @@ footer {
     width: 73%;
     left: 49px;
     order: -1;
-  }
-
-  .p6,
-  .pb3,
-  .pb4,
-  .pb2 {
-    display: none;
   }
 
   a.button {
