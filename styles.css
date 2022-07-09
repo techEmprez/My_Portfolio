@@ -497,4 +497,41 @@ footer {
   .social-networks {
     gap: 32px;
   }
+
+  .project2,
+  .project3,
+  .project4,
+  .project6,
+  .project-info6,
+  .project-info4,
+  .project-info3 {
+    display: none;
+  }
+
+  .project1 {
+    width: 780px;
+    height: 558px;
+    position: relative;
+    left: 482px;
+    /* top: -150px; */
+  }
+
+  .project5 {
+    width: 200px;
+    height: 55px;
+  }
+
+  .project-heading h2 {
+    display: inline-block;
+    transform: rotate(-90deg) translateX(-50%);
+    /* margin-left: 8%; */
+    padding-right: 80px;
+    font-weight: 400;
+    font-size: 110px;
+    line-height: 100%;
+    color: #1a2236;
+  }
+
+  .project-heading img {
+  }
 }
