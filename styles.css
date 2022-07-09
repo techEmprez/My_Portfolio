@@ -141,6 +141,7 @@ button {
 
 .project-img {
   width: 100%;
+  margin-top: -10px;
 }
 
 .project-name {
@@ -414,8 +415,7 @@ footer {
     grid-template-columns: 1fr 1fr;
     gap: 0;
     grid-area: 1 / 1;
-    background:
-      url("./images/desktop/image_dots_with_teal.svg") no-repeat 100%
+    background: url("./images/desktop/image_dots_with_teal.svg") no-repeat 100%
       100%;
     background-size: 40%;
   }
@@ -430,8 +430,7 @@ footer {
   }
 
   .contact-form {
-    background:
-      url("./images/desktop/image-geometry_6.svg") no-repeat,
+    background: url("./images/desktop/image-geometry_6.svg") no-repeat,
       url("./images/desktop/image-geometry_7.svg") no-repeat 100% 100%;
     background-size: 170px;
     display: flex;
@@ -524,8 +523,7 @@ footer {
   }
 
   .projects-container {
-    background:
-      url("./images/desktop/image_dots.svg") no-repeat 30% 8%,
+    background: url("./images/desktop/image_dots.svg") no-repeat 30% 8%,
       url("images/desktop/image-geometry_5.svg") no-repeat 0 90%,
       url("images/desktop/image-geometry_2.svg") no-repeat 48% 52%,
       url("images/desktop/image-geometry_3.svg") no-repeat 80% 82%,
