@@ -421,10 +421,6 @@ footer {
     padding-left: 50px;
   }
 
-  .project-wrapper {
-    display: grid;
-  }
-
   .contact-form-background {
     display: none;
   }
@@ -516,10 +512,14 @@ footer {
     left: 68px;
   }
 
+  h1,
+  h2 {
+    font-size: 80px;
+  }
+
   .project-heading h2 {
     display: inline-block;
     transform: rotate(-90deg) translateX(-50%);
-    /* margin-left: 8%; */
     padding-right: 50px;
     font-weight: 400;
     font-size: 110px;
@@ -553,15 +553,19 @@ footer {
   .p1 {
     grid-area: p1;
   }
+
   .p2 {
     grid-area: p2;
   }
+
   .p3 {
     grid-area: p3;
   }
+
   .p4 {
     grid-area: p4;
   }
+
   .p6 {
     grid-area: p6;
   }
@@ -586,11 +590,6 @@ footer {
   .pb4,
   .pb2 {
     display: none;
-  }
-
-  h1,
-  h2 {
-    font-size: 80px;
   }
 
   a.button {
