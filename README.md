@@ -7,6 +7,10 @@ projects done and contact detail.
 
 - HTML and CSS
 
+## Interested to view my Portfolio... Click here
+
+- https://suigeneriz.github.io/My_Portfolio/
+
 ## Author
 
 👤 **Choice Osobor**
