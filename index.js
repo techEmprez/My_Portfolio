@@ -36,8 +36,8 @@ window.onresize = () => {
   }
 };
 
-qsa('div.nav-links a').forEach(link => {
+qsa('div.nav-links a').forEach((link) => {
   link.addEventListener('click', (e) => {
     qs(e.target.getAttribute('href').replace('#', '.')).scrollIntoView();
-  })
-})
+  });
+});
