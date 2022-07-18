@@ -338,7 +338,7 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: 
+  background-image:
     url("images/mobile_menu_top.png"),
     url("images/mobile_menu_bottom.png"),
     url("images/dots.png"),
@@ -453,7 +453,7 @@ footer {
     grid-template-columns: 1fr 1fr;
     gap: 0;
     grid-area: 1 / 1;
-    background:
+    background: 
       url("./images/desktop/image_dots_with_teal.svg") no-repeat 100% 100%;
     background-size: 40%;
   }
