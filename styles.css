@@ -453,8 +453,7 @@ footer {
     grid-template-columns: 1fr 1fr;
     gap: 0;
     grid-area: 1 / 1;
-    background: 
-      url("./images/desktop/image_dots_with_teal.svg") no-repeat 100% 100%;
+    background: url("./images/desktop/image_dots_with_teal.svg") no-repeat 100% 100%;
     background-size: 40%;
   }
 
