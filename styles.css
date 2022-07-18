@@ -316,6 +316,43 @@ footer {
   display: none;
 }
 
+.no-display {
+  display: none;
+}
+
+.in-front {
+  position: fixed;
+  right: 5%;
+  top: 2.5%;
+  z-index: 1;
+}
+
+.enlarged-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url('images/mobile_menu_top.png'),
+    url('images/mobile_menu_bottom.png'),
+    url('images/dots.png'),
+    url('images/dots.png');
+  background-repeat: no-repeat;
+  background-position: left top, left bottom, 75% 15%, 15% 75%;
+  background-size: 11.1rem 7.4rem, 32rem 8rem, 4rem, 4rem;
+}
+
+.enlarged-menu a {
+  padding: 0.3rem 0;
+  font: 400 1.6rem/4.8rem "Poppins", sans-serif;
+  color: black;
+}
+
 /* DESKTOP VERSION STYLING */
 
 @media (min-width: 768px) {
