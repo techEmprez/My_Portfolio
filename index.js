@@ -36,7 +36,7 @@ window.onresize = () => {
   }
 };
 
-for (let link of qsa('div.nav-links a')) {
+for (const link of qsa('div.nav-links a')) {
   link.addEventListener('click', (e) => {
     qs(e.target.getAttribute('href').replace('#', '.')).scrollIntoView();
   });
