@@ -38,3 +38,9 @@ window.onresize = function () {
     toggleBurger();
   }
 };
+
+for (link of qsa("div.nav-links a")) {
+  link.addEventListener("click", (e) => {
+    qs(e.target.getAttribute("href").replace("#", ".")).scrollIntoView();
+  });
+}
