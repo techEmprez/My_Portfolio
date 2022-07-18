@@ -29,3 +29,12 @@ function toggleBurger() {
   burgerClose.classList.toggle("no-display");
   qs("div.nav-links").classList.toggle("enlarged-menu");
 }
+
+window.onresize = function () {
+  if (
+    window.innerWidth >= 768 &&
+    qs("div.nav-links").classList.contains("enlarged-menu")
+  ) {
+    toggleBurger();
+  }
+};
