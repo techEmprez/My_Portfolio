@@ -354,6 +354,20 @@ footer {
   color: black;
 }
 
+.test {
+  all: unset;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: red;
+}
+
+.test a.button {
+  background-color: green;
+}
+
 /* DESKTOP VERSION STYLING */
 
 @media (min-width: 768px) {

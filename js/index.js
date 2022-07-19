@@ -153,3 +153,15 @@ for (let project of projects) {
 
   projectWrapper.appendChild(article);
 }
+
+function createPopup(element) {
+  element.classList.add('test');
+}
+
+projectWrapper.addEventListener('click', e => {
+  const { target } = e;
+
+  if (target.tagName.toLowerCase() !== 'a' || !target.classList.contains('navy-button')) return
+
+  createPopup(target.closest('article'));
+});
