@@ -17,7 +17,7 @@ projects done and contact details.
 
 - GitHub: [@githubhandle](https://github.com/techEmprez)
 - Twitter: [@twitterhandle](https://twitter.com/Suigeneriz_)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/choice-osobor/)
+- LinkedIn: [Choice Osobor](https://www.linkedin.com/in/choice-osobor/)
 
 👤 **Bucur Liviu-Emanuel (Eva)**
 
