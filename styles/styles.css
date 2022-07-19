@@ -389,7 +389,9 @@ footer {
     justify-content: center;
     align-items: center;
     background: #fff;
-    box-shadow: 0 0.5px 0 #dddfe6;
+    position: fixed;
+    z-index: 1;
+    border-bottom: 1px solid #dee2e6;
   }
 
   .headline-img1 {

@@ -1,17 +1,17 @@
-.modal-language {
+.modalLanguage {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   list-style: none;
 }
 
-.modal-language li {
+.modalLanguage li {
   background: #fff;
   border: 0.516669px solid #1a2236;
   padding: 5px;
 }
 
-.modal-heading {
+.modalHeading {
   text-align: center;
   color: #1a2236;
   font-size: 20px;
@@ -32,4 +32,43 @@
   display: flex;
   justify-content: center;
   margin-top: -0.28rem;
+}
+
+.modalParagraph {
+  padding-top: 40px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: #1a2236;
+  width: 85%;
+  padding-left: 20px;
+}
+
+.modalBtn1 {
+  background-image: url("../images/modal/ic_link.png");
+  background-repeat: no-repeat;
+  background-color: white;
+  font-weight: 200;
+  text-align: center;
+  color: #1a2236;
+  background-position: 80% center;
+  width: 90%;
+  font-size: 18px;
+  border: 1px solid #1a2236;
+  height: 50px;
+}
+
+.modalBtn2 {
+  background-image: url("../images/modal/github.png");
+  background-repeat: no-repeat;
+  background-color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  text-align: center;
+  color: #1a2236;
+  background-position: 80% center;
+  width: 90%;
+  font-size: 18px;
+  border: 1px solid #1a2236;
+  height: 50px;
 }
