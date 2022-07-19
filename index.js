@@ -41,3 +41,115 @@ qsa('div.nav-links a').forEach((link) => {
     qs(e.target.getAttribute('href').replace('#', '.')).scrollIntoView();
   });
 });
+
+const projects = [
+  {
+    title: 'Project name goes here',
+    image: 'images/project1.svg',
+    imageAlternative: 'Project 1',
+    languages: ['HTML/CSS', 'Ruby on Rails', 'JavaScript']
+  },
+  {
+    title: 'Project name goes here',
+    image: 'images/project2.svg',
+    imageAlternative: 'Project 2',
+    languages: ['HTML/CSS', 'Ruby on Rails', 'JavaScript']
+  },
+  {
+    title: 'Project name goes here',
+    image: 'images/project3.svg',
+    imageAlternative: 'Project 3',
+    languages: ['HTML/CSS', 'Ruby on Rails', 'JavaScript']
+  },
+  {
+    title: 'Project name goes here',
+    image: 'images/project4.svg',
+    imageAlternative: 'Project 4',
+    languages: ['HTML/CSS', 'Ruby on Rails', 'JavaScript']
+  },
+  {
+    title: 'Project name goes here',
+    image: 'images/project5.svg',
+    imageAlternative: 'Project 5',
+    languages: ['HTML/CSS', 'Ruby on Rails', 'JavaScript']
+  },
+  {
+    title: 'Project name goes here',
+    image: 'images/project6.svg',
+    imageAlternative: 'Project 6',
+    languages: ['HTML/CSS', 'Ruby on Rails', 'JavaScript']
+  }
+];
+
+const projectWrapper = qs('.project-wrapper');
+
+function produceElement(obj) {
+  const element = document.createElement(obj.type);
+  delete obj.type;
+
+  for (let prop in obj) {
+    if (prop === 'class') {
+      if (typeof obj.class === 'object') {
+        element.classList.add(...obj.class);
+      } else {
+        element.classList.add(obj.class);
+      }
+    } else {
+      element[prop] = obj[prop];
+    }
+  }
+
+  return element;
+}
+
+let itterationIndex = 1;
+
+for (let project of projects) {
+  const article = produceElement({
+    type: 'article',
+    class: ['projects', `p${itterationIndex}`]
+  });
+  article.appendChild(produceElement({
+    type: 'img',
+    src: project.image,
+    alt: project.imageAlternative,
+    class: 'project-img'
+  }));
+  const div = produceElement({
+    type: 'div',
+    class: ['project-info', `pb${itterationIndex++}`]
+  });
+  div.appendChild(produceElement({
+    type: 'h3',
+    class: 'project-name',
+    textContent: project.title
+  }));
+  const div2 = produceElement({
+    type: 'div',
+    class: 'language-info'
+  });
+  
+  for (let language of project.languages) {
+    div2.appendChild(produceElement({
+      type: 'span',
+      class: 'language',
+      textContent: language
+    }));
+  }
+
+  div.appendChild(div2);
+  const a = produceElement({
+    type: 'a',
+    href: '#',
+    class: ['button', 'navy-button', 'project-view'],
+    textContent: 'See this project '
+  });
+  a.appendChild(produceElement({
+    type: 'i',
+    class: ['fa-solid', 'fa-arrow-right']
+  }));
+  div.appendChild(a);
+  article.appendChild(div);
+
+  projectWrapper.appendChild(article);
+}
