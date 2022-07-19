@@ -25,9 +25,11 @@
   width: 100%;
   height: 162px;
   padding-top: 50px;
+  margin: 0;
 }
 
 .modal-sub-img {
   display: flex;
   justify-content: center;
+  margin-top: -0.28rem;
 }
