@@ -39,6 +39,7 @@
 
 .imageContainer {
   width: 100%;
+  position: relative;
 }
 
 .modal-img1 {
@@ -92,8 +93,8 @@
 
   .closeBtn {
     position: absolute;
-    top: 2.5%;
-    right: 2rem;
+    top: 25%;
+    right: 10rem;
   }
 
   .modalHeading {
@@ -119,6 +120,12 @@
     margin-left: 20%;
   }
 
+  .modalView button:hover {
+    border: 1px #fff solid;
+    background-color: #1a2236;
+    color: #fff;
+  }
+
   .modalView .modalBtn2 {
     width: 22% !important;
     margin-left: 30px;
@@ -136,5 +143,21 @@
   .pagination a {
     font: 300 18px/27px "Poppins", sans-serif;
     color: #1a2236;
+  }
+
+  .modal-arrow-left,
+  .modal-arrow-right {
+    position: absolute;
+    top: 40%;
+    width: 53px;
+    height: 26px;
+  }
+
+  .modal-arrow-left {
+    left: 1%;
+  }
+
+  .modal-arrow-right {
+    right: 1%;
   }
 }

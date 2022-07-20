@@ -183,9 +183,11 @@ for (const button of qsa(".project-view")) {
 
     // THIS CHANGES THE IMAGES ON THE MODAL FROM THE PROJECTS
     // qs("img", modal).src = data.image;
-    qsa("img:not(.closeBtn)", modal).map((img) => {
-      return (img.src = data.image);
-    });
+    qsa("img:not(.closeBtn, .modal-arrow-left, .modal-arrow-right)", modal).map(
+      (img) => {
+        return (img.src = data.image);
+      }
+    );
   });
 }
 
