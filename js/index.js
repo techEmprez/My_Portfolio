@@ -114,8 +114,8 @@ projects.forEach((project, itterationIndex) => {
       type: 'img',
       src: project.image,
       alt: project.imageAlternative,
-      class: 'project-img'
-    })
+      class: 'project-img',
+    }),
   );
   const div = produceElement({
     type: 'div',
@@ -125,8 +125,8 @@ projects.forEach((project, itterationIndex) => {
     produceElement({
       type: 'h3',
       class: 'project-name',
-      textContent: project.title
-    })
+      textContent: project.title,
+    }),
   );
   const div2 = produceElement({
     type: 'div',
@@ -138,8 +138,8 @@ projects.forEach((project, itterationIndex) => {
       produceElement({
         type: 'span',
         class: 'language',
-        textContent: language
-      })
+        textContent: language,
+      }),
     );
   });
 
@@ -148,13 +148,13 @@ projects.forEach((project, itterationIndex) => {
     type: 'a',
     href: '#',
     class: ['button', 'navy-button', 'project-view'],
-    textContent: 'See this project '
+    textContent: 'See this project ',
   });
   a.appendChild(
     produceElement({
       type: 'i',
-      class: ['fa-solid', 'fa-arrow-right']
-    })
+      class: ['fa-solid', 'fa-arrow-right'],
+    }),
   );
   div.appendChild(a);
   article.appendChild(div);
@@ -185,7 +185,7 @@ qsa('.project-view').forEach((button) => {
       (img) => {
         img.src = data.image;
         return img;
-      }
+      },
     );
   });
 });
