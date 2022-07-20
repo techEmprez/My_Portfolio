@@ -639,3 +639,12 @@ footer {
     color: #1a2236;
   }
 }
+/* MODAL STYLES */
+.modalView {
+  position: relative;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  background-color: #fff;
+}

@@ -164,5 +164,3 @@ for (let project of projects) {
 
   projectWrapper.appendChild(article);
 }
-
-document.querySelectorAll(".project-wrapper .navy-button");
