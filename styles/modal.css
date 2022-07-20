@@ -59,24 +59,14 @@
 }
 
 .modalView button {
-  background-repeat: no-repeat;
   background-color: white;
   font-weight: 500;
   text-align: center;
   color: #1a2236;
-  background-position: 80% center;
   width: 90%;
   font-size: 18px;
   border: 1px solid #1a2236;
   height: 50px;
-}
-
-.modalBtn1 {
-  background-image: url("../images/modal/ic_link.png");
-}
-
-.modalBtn2 {
-  background-image: url("../images/modal/github.png");
 }
 
 @media (min-width: 768px) {
@@ -120,15 +110,24 @@
     margin-left: 20%;
   }
 
+  .modalView .modalBtn2 {
+    width: 22% !important;
+    margin-left: 30px;
+  }
+
+  .modalView button object {
+    vertical-align: middle;
+  }
+  
   .modalView button:hover {
     border: 1px #fff solid;
     background-color: #1a2236;
     color: #fff;
+    cursor: pointer;
   }
 
-  .modalView .modalBtn2 {
-    width: 22% !important;
-    margin-left: 30px;
+  .modalView button:hover object {
+    filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7500%) hue-rotate(10deg) brightness(97%) contrast(109%);
   }
 
   .pagination {
