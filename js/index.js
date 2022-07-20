@@ -195,3 +195,17 @@ qs('.closeBtn').addEventListener('click', () => {
   modal.classList.add('no-display');
   qs('header').scrollIntoView({ behavior: 'smooth' });
 });
+
+qs('form').addEventListener('submit', (e) => {
+  e.preventDefault();
+
+  const { value } = qs('#email');
+  const emailError = qs('.emailError');
+
+  if (value !== value.toLowerCase()) {
+    emailError.textContent = 'The email field must be typed in lowercase characters';
+  } else {
+    emailError.textContent = '';
+    qs('form').submit();
+  }
+});
