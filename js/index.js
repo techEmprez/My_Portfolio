@@ -164,3 +164,16 @@ for (let project of projects) {
 
   projectWrapper.appendChild(article);
 }
+
+for (const button of qsa(".project-view")) {
+  button.addEventListener("click", function (e) {
+    e.preventDefault();
+    const { target } = e;
+    const article = target.closest("article");
+    const alt = qs("img", article).alt;
+    const data = projects.find((project) => project.imageAlternative === alt);
+
+    const modal = qs(".modalView");
+    qs("h1", modal).textContent = data.title;
+  });
+}
