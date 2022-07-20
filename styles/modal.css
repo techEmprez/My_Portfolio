@@ -1,8 +1,34 @@
+.modalView {
+  position: fixed;
+  width: 100vw;
+  top: 0;
+  bottom: 0;
+  background-color: #fff;
+  box-sizing: border-box;
+  overflow-y: auto;
+  padding: 0 20px;
+  z-index: 100;
+}
+
+.closeBtn {
+  position: absolute;
+  top: 2.5%;
+  right: 10%;
+  cursor: pointer;
+}
+
+.modalHeading {
+  color: #1a2236;
+  font: 700 20px/16px "Poppins", sans-serif;
+  padding-top: 57px;
+}
+
 .modalLanguage {
   display: flex;
-  justify-content: space-evenly;
-  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
   list-style: none;
+  margin-bottom: 18px;
 }
 
 .modalLanguage li {
@@ -11,196 +37,91 @@
   padding: 5px;
 }
 
-.modalHeading {
-  text-align: center;
-  color: #1a2236;
-  font-size: 20px;
-  font-family: "Poppins", sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  padding-top: 57px;
+.imageContainer {
+  width: 100%;
 }
 
 .modal-img1 {
   width: 100%;
-  height: 162px;
-  padding-top: 50px;
   margin: 0;
 }
 
 .modal-sub-img {
   display: flex;
   justify-content: center;
-  margin-top: -0.28rem;
+  margin-top: -0.35rem;
+  margin-bottom: 30px;
 }
 
-.modalParagraph {
-  padding-top: 40px;
-  font-family: "Poppins", sans-serif;
-  font-weight: 400;
-  font-size: 18px;
+.modal-sub-img img {
+  width: 25%;
+}
+
+.modalView button {
+  background-repeat: no-repeat;
+  background-color: white;
+  font-weight: 500;
+  text-align: center;
   color: #1a2236;
+  background-position: 80% center;
   width: 90%;
-  margin: 0 auto;
+  font-size: 18px;
+  border: 1px solid #1a2236;
+  height: 50px;
 }
 
 .modalBtn1 {
   background-image: url("../images/modal/ic_link.png");
-  background-repeat: no-repeat;
-  background-color: white;
-  font-weight: 500;
-  text-align: center;
-  color: #1a2236;
-  background-position: 80% center;
-  width: 90%;
-  font-size: 18px;
-  border: 1px solid #1a2236;
-  height: 50px;
 }
 
 .modalBtn2 {
   background-image: url("../images/modal/github.png");
-  background-repeat: no-repeat;
-  background-color: white;
-  font-weight: 500;
-  text-align: center;
-  color: #1a2236;
-  background-position: 80% center;
-  width: 90%;
-  font-size: 18px;
-  border: 1px solid #1a2236;
-  height: 50px;
-}
-
-.modalView {
-  position: fixed;
-  width: 100vw;
-  top: 0;
-  bottom: 0;
-  background-color: #fff;
-  overflow-y: auto;
-}
-
-.modal-sub-img img {
-  width: 21.6%;
-}
-
-.closeBtn {
-  position: absolute;
-  top: 2.5%;
-  right: 2rem;
 }
 
 @media (min-width: 768px) {
-  .modalLanguage {
-    display: flex;
-    justify-content: flex-start;
-    gap: 20px;
-    align-items: center;
-    list-style: none;
-  }
-
-  .modalLanguage li {
-    background: #fff;
-    border: 0.516669px solid #1a2236;
-    padding: 5px;
-  }
-
-  .modalHeading {
-    text-align: left;
-    color: #1a2236;
-    font-size: 60px;
-    line-height: 48px;
-    font-family: "Poppins", sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    padding-top: 57px;
-  }
-
-  .imageContainer {
-    width: 100%;
-    height: auto;
-    text-align: center;
-    position: relative;
-  }
-
-  .modal-img1 {
-    width: 100%;
-    height: 685px;
-    padding-top: 50px;
-    margin: 0;
-  }
-
-  .modal-sub-img {
-    width: 79.15%;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    margin-top: -0.55rem;
-  }
-
-  .modalParagraph {
-    padding-top: 40px;
-    font-family: "Poppins", sans-serif;
-    font-weight: 400;
-    font-size: 18px;
-    color: #1a2236;
-    width: 50%;
-    margin: 0 auto;
-  }
-
-  .modalBtn1 {
-    background-image: url("../images/modal/ic_link.png");
-    background-repeat: no-repeat;
-    background-color: white;
-    font-weight: 500;
-    text-align: center;
-    color: #1a2236;
-    background-position: 80% center;
-    width: 16.5%;
-    font-size: 18px;
-    border: 1px solid #1a2236;
-    height: 50px;
-    display: inline-block;
-    margin-left: 25%;
-  }
-
-  .modalBtn2 {
-    background-image: url("../images/modal/github.png");
-    background-repeat: no-repeat;
-    background-color: white;
-    font-weight: 500;
-    text-align: center;
-    color: #1a2236;
-    background-position: 80% center;
-    width: 16.5%;
-    font-size: 18px;
-    border: 1px solid #1a2236;
-    height: 50px;
-    margin-left: 30px;
-  }
-
   .modalView {
-    position: fixed;
     width: 100vw;
-    top: 0;
-    bottom: 0;
-    border: 70px solid #1a2236;
-    box-sizing: border-box;
-    padding-left: 60px;
-    background-color: #fff;
-    overflow-y: auto;
-    z-index: 100;
+    background-color: #1a2236;
   }
 
-  .modal-sub-img img {
-    width: 21.6%;
+  .modalContainer {
+    margin: 70px;
+    padding: 0 60px;
+    background-color: white;
   }
 
   .closeBtn {
     position: absolute;
     top: 2.5%;
     right: 2rem;
+  }
+
+  .modalHeading {
+    text-align: left;
+    font: 700 60px/48px "Poppins", sans-serif;
+  }
+
+  .modal-sub-img {
+    margin-top: -0.65rem;
+  }
+
+  .modalParagraph {
+    font: 400 18px "Poppins", sans-serif;
+    padding-top: 40px;
+    color: #1a2236;
+    width: 60%;
+    margin: 0 auto;
+  }
+
+  .modalView .modalBtn1 {
+    width: 22%;
+    display: inline-block;
+    margin-left: 20%;
+  }
+
+  .modalView .modalBtn2 {
+    width: 22% !important;
+    margin-left: 30px;
   }
 
   .pagination {

@@ -352,7 +352,8 @@ footer {
   color: black;
 }
 
-.pagination {
+.pagination,
+.modalBackground {
   display: none;
 }
 
