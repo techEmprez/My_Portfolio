@@ -174,6 +174,17 @@ for (const button of qsa(".project-view")) {
     const data = projects.find((project) => project.imageAlternative === alt);
 
     const modal = qs(".modalView");
+    modal.classList.remove("no-display");
+    modal.scrollIntoView();
     qs("h1", modal).textContent = data.title;
+    qsa("li", modal).map((li, i) => {
+      return (li.textContent = data.languages[i]);
+    });
+
+    // THIS CHANGES THE IMAGES ON THE MODAL FROM THE PROJECTS
+    // qs("img", modal).src = data.image;
+    qsa("img", modal).map((img) => {
+      return (img.src = data.image);
+    });
   });
 }

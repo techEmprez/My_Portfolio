@@ -80,3 +80,7 @@
   z-index: 1000;
   background-color: #fff;
 }
+
+.modal-sub-img img {
+  width: 21.6%;
+}
