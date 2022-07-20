@@ -94,7 +94,8 @@
 @media (min-width: 768px) {
   .modalLanguage {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: flex-start;
+    gap: 20px;
     align-items: center;
     list-style: none;
   }
@@ -108,24 +109,34 @@
   .modalHeading {
     text-align: left;
     color: #1a2236;
-    font-size: 20px;
+    font-size: 60px;
+    line-height: 48px;
     font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: 700;
     padding-top: 57px;
   }
 
+  .imageContainer {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    position: relative;
+  }
+
   .modal-img1 {
     width: 100%;
-    height: 162px;
+    height: 685px;
     padding-top: 50px;
     margin: 0;
   }
 
   .modal-sub-img {
+    width: 79.15%;
+    margin: 0 auto;
     display: flex;
     justify-content: center;
-    margin-top: -0.28rem;
+    margin-top: -0.55rem;
   }
 
   .modalParagraph {
@@ -134,7 +145,7 @@
     font-weight: 400;
     font-size: 18px;
     color: #1a2236;
-    width: 90%;
+    width: 50%;
     margin: 0 auto;
   }
 
@@ -146,10 +157,12 @@
     text-align: center;
     color: #1a2236;
     background-position: 80% center;
-    width: 90%;
+    width: 16.5%;
     font-size: 18px;
     border: 1px solid #1a2236;
     height: 50px;
+    display: inline-block;
+    margin-left: 25%;
   }
 
   .modalBtn2 {
@@ -160,10 +173,11 @@
     text-align: center;
     color: #1a2236;
     background-position: 80% center;
-    width: 90%;
+    width: 16.5%;
     font-size: 18px;
     border: 1px solid #1a2236;
     height: 50px;
+    margin-left: 30px;
   }
 
   .modalView {
@@ -171,6 +185,9 @@
     width: 100vw;
     top: 0;
     bottom: 0;
+    border: 70px solid #1a2236;
+    box-sizing: border-box;
+    padding-left: 60px;
     background-color: #fff;
     overflow-y: auto;
     z-index: 100;
@@ -184,5 +201,19 @@
     position: absolute;
     top: 2.5%;
     right: 2rem;
+  }
+
+  .pagination {
+    padding-top: 120px;
+    padding-bottom: 109px;
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+  }
+
+  .pagination a {
+    font: 300 18px/27px "Poppins", sans-serif;
+    color: #1a2236;
   }
 }

@@ -352,6 +352,10 @@ footer {
   color: black;
 }
 
+.pagination {
+  display: none;
+}
+
 /* DESKTOP VERSION STYLING */
 
 @media (min-width: 768px) {
