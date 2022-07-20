@@ -183,8 +183,14 @@ for (const button of qsa(".project-view")) {
 
     // THIS CHANGES THE IMAGES ON THE MODAL FROM THE PROJECTS
     // qs("img", modal).src = data.image;
-    qsa("img", modal).map((img) => {
+    qsa("img:not(.closeBtn)", modal).map((img) => {
       return (img.src = data.image);
     });
   });
 }
+
+qs(".closeBtn").addEventListener("click", function () {
+  const modal = qs(".modalView");
+  modal.classList.add("no-display");
+  qs("header").scrollIntoView({ behavior: "smooth" });
+});

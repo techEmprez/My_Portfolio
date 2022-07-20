@@ -73,14 +73,116 @@
 }
 
 .modalView {
-  position: relative;
+  position: fixed;
   width: 100vw;
   top: 0;
-  left: 0;
-  z-index: 1000;
+  bottom: 0;
   background-color: #fff;
+  overflow-y: auto;
 }
 
 .modal-sub-img img {
   width: 21.6%;
+}
+
+.closeBtn {
+  position: absolute;
+  top: 2.5%;
+  right: 2rem;
+}
+
+@media (min-width: 768px) {
+  .modalLanguage {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+  }
+
+  .modalLanguage li {
+    background: #fff;
+    border: 0.516669px solid #1a2236;
+    padding: 5px;
+  }
+
+  .modalHeading {
+    text-align: left;
+    color: #1a2236;
+    font-size: 20px;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    padding-top: 57px;
+  }
+
+  .modal-img1 {
+    width: 100%;
+    height: 162px;
+    padding-top: 50px;
+    margin: 0;
+  }
+
+  .modal-sub-img {
+    display: flex;
+    justify-content: center;
+    margin-top: -0.28rem;
+  }
+
+  .modalParagraph {
+    padding-top: 40px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #1a2236;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .modalBtn1 {
+    background-image: url("../images/modal/ic_link.png");
+    background-repeat: no-repeat;
+    background-color: white;
+    font-weight: 500;
+    text-align: center;
+    color: #1a2236;
+    background-position: 80% center;
+    width: 90%;
+    font-size: 18px;
+    border: 1px solid #1a2236;
+    height: 50px;
+  }
+
+  .modalBtn2 {
+    background-image: url("../images/modal/github.png");
+    background-repeat: no-repeat;
+    background-color: white;
+    font-weight: 500;
+    text-align: center;
+    color: #1a2236;
+    background-position: 80% center;
+    width: 90%;
+    font-size: 18px;
+    border: 1px solid #1a2236;
+    height: 50px;
+  }
+
+  .modalView {
+    position: fixed;
+    width: 100vw;
+    top: 0;
+    bottom: 0;
+    background-color: #fff;
+    overflow-y: auto;
+    z-index: 100;
+  }
+
+  .modal-sub-img img {
+    width: 21.6%;
+  }
+
+  .closeBtn {
+    position: absolute;
+    top: 2.5%;
+    right: 2rem;
+  }
 }
