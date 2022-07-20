@@ -4,24 +4,83 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="styles/modal.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <script
       src="https://kit.fontawesome.com/579b112cc6.js"
       crossorigin="anonymous"
     ></script>
-    <script src="index.js" defer></script>
+    <script src="js/index.js" defer></script>
 
     <title>My Portfolio</title>
   </head>
   <body>
+    <div class="modalView no-display">
+      <div class="modalContainer">
+        <img class="closeBtn" src="./images/menu_close.svg" alt="Close button" />
+        <h1 class="modalHeading">Project name goes here</h1>
+        <ul class="modalLanguage">
+          <li>HTML/CSS</li>
+          <li>Ruby on rails</li>
+          <li>Javascript</li>
+        </ul>
+        <div class="imageContainer">
+          <img class="modal-arrow-left" src="images/modal/Vector_4.svg" alt="modal arrow left" />
+          <img class="modal-arrow-right" src="images/modal/Vector_5.svg" alt="modal arrow right" />
+          <img
+            class="modal-img1"
+            src="./images/modal/Rectangle_34.svg"
+            alt="modal-image"
+          />
+          <div class="modal-sub-img">
+            <img src="./images/modal/Rectangle_39.svg" alt="modal-sub-image" />
+            <img src="./images/modal/Rectangle_39.svg" alt="modal-sub-image" />
+            <img src="./images/modal/Rectangle_39.svg" alt="modal-sub-image" />
+            <img src="./images/modal/Rectangle_39.svg" alt="modal-sub-image" />
+          </div>
+        </div>
+        <div class="modalParagraph">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi Ut
+            aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+            exercitation ullamco laboris nisi.
+          </p>
+          <br />
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi Ut
+            aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+            exercitation ullamco laboris nisi.
+          </p>
+        </div>
+        <button class="modalBtn1 navy-button" type="button">See live <object data="images/modal/ic_link.png"></object></button>
+        <button class="modalBtn2 navy-button" type="button">See source <object data="images/modal/github.png"></object></button>
+        <div class="pagination">
+          <a href="#">&larr; Previous Project</a>
+          <a href="#">Next Project &rarr;</a>
+        </div>
+      </div>
+    </div>
+
     <header>
       <a class="navLogo" href="./index.html">
         <img src="./images/image_geometry_1.svg" alt="navLogo" />
       </a>
       <nav class="hamburger">
         <img src="./images/ic_menu.svg" alt="hamburger" />
-        <img src="./images/menu_close.svg" alt="hamburger close" class="no-display in-front">
+        <img
+          src="./images/menu_close.svg"
+          alt="hamburger close"
+          class="no-display in-front"
+        />
       </nav>
       <div class="nav-links">
         <a href="#headline-container">Home</a>
@@ -29,7 +88,6 @@
         <a href="#about-section">About</a>
         <a href="#contact-form">Contact</a>
       </div>
-
     </header>
 
     <main>
@@ -63,121 +121,7 @@
           <h2>Projects</h2>
         </div>
 
-        <div class="project-wrapper">
-          <section class="projects p1">
-            <img
-              src="./images/project1.svg"
-              alt="Project-1"
-              class="project-img"
-            />
-            <div class="project-info pb1">
-              <h3 class="project-name">Project name goes here</h3>
-              <div class="language-info">
-                <span class="language">HTML/CSS</span>
-                <span class="language">Ruby on Rails</span>
-                <span class="language">JavaScript</span>
-              </div>
-              <a href="#" class="button navy-button project-view"
-                >See this project <i class="fa-solid fa-arrow-right"></i
-              ></a>
-            </div>
-          </section>
-
-          <section class="projects p2">
-            <img
-              src="./images/project2.svg"
-              alt="Project-2"
-              class="project-img"
-            />
-            <div class="project-info pb2">
-              <h3 class="project-name">Project name goes here</h3>
-              <div class="language-info">
-                <span class="language">HTML/CSS</span>
-                <span class="language">Ruby on Rails</span>
-                <span class="language">JavaScript</span>
-              </div>
-              <a href="#" class="button navy-button project-view"
-                >See this project <i class="fa-solid fa-arrow-right"></i
-              ></a>
-            </div>
-          </section>
-
-          <section class="projects p3">
-            <img
-              src="./images/project3.svg"
-              alt="Project-3"
-              class="project-img"
-            />
-            <div class="project-info pb3">
-              <h3 class="project-name">Project name goes here</h3>
-              <div class="language-info">
-                <span class="language">HTML/CSS</span>
-                <span class="language">Ruby on Rails</span>
-                <span class="language">JavaScript</span>
-              </div>
-              <a href="#" class="button navy-button project-view"
-                >See this project <i class="fa-solid fa-arrow-right"></i
-              ></a>
-            </div>
-          </section>
-
-          <section class="projects p4">
-            <img
-              src="./images/project4.svg"
-              alt="Project-4"
-              class="project-img"
-            />
-            <div class="project-info pb4">
-              <h3 class="project-name">Project name goes here</h3>
-              <div class="language-info">
-                <span class="language">HTML/CSS</span>
-                <span class="language">Ruby on Rails</span>
-                <span class="language">JavaScript</span>
-              </div>
-              <a href="#" class="button navy-button project-view"
-                >See this project <i class="fa-solid fa-arrow-right"></i
-              ></a>
-            </div>
-          </section>
-
-          <section class="projects p5">
-            <img
-              src="./images/project5.svg"
-              alt="Project-5"
-              class="project-img pi5"
-            />
-            <div class="project-info pb5">
-              <h3 class="project-name">Project name goes here</h3>
-              <div class="language-info">
-                <span class="language">HTML/CSS</span>
-                <span class="language">Ruby on Rails</span>
-                <span class="language">JavaScript</span>
-              </div>
-              <a href="#" class="button navy-button project-view"
-                >See this project <i class="fa-solid fa-arrow-right"></i
-              ></a>
-            </div>
-          </section>
-
-          <section class="projects p6">
-            <img
-              src="./images/project6.svg"
-              alt="Project-6"
-              class="project-img"
-            />
-            <div class="project-info pb6">
-              <h3 class="project-name">Project name goes here</h3>
-              <div class="language-info">
-                <span class="language">HTML/CSS</span>
-                <span class="language">Ruby on Rails</span>
-                <span class="language">JavaScript</span>
-              </div>
-              <a href="#" class="button navy-button project-view"
-                >See this project <i class="fa-solid fa-arrow-right"></i
-              ></a>
-            </div>
-          </section>
-        </div>
+        <div class="project-wrapper"></div>
       </section>
 
       <section class="about-section">

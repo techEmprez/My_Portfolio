@@ -1,0 +1,162 @@
+.modalView {
+  position: fixed;
+  width: 100vw;
+  top: 0;
+  bottom: 0;
+  background-color: #fff;
+  box-sizing: border-box;
+  overflow-y: auto;
+  padding: 0 20px;
+  z-index: 100;
+}
+
+.closeBtn {
+  position: absolute;
+  top: 2.5%;
+  right: 10%;
+  cursor: pointer;
+}
+
+.modalHeading {
+  color: #1a2236;
+  font: 700 20px/16px "Poppins", sans-serif;
+  padding-top: 57px;
+}
+
+.modalLanguage {
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+  list-style: none;
+  margin-bottom: 18px;
+}
+
+.modalLanguage li {
+  background: #fff;
+  border: 0.516669px solid #1a2236;
+  padding: 5px;
+}
+
+.imageContainer {
+  width: 100%;
+  position: relative;
+}
+
+.modal-img1 {
+  width: 100%;
+  margin: 0;
+}
+
+.modal-sub-img {
+  display: flex;
+  justify-content: center;
+  margin-top: -0.35rem;
+  margin-bottom: 30px;
+}
+
+.modal-sub-img img {
+  width: 25%;
+}
+
+.modalView button {
+  background-color: white;
+  font-weight: 500;
+  text-align: center;
+  color: #1a2236;
+  width: 90%;
+  font-size: 18px;
+  border: 1px solid #1a2236;
+  height: 50px;
+}
+
+@media (min-width: 768px) {
+  .modalView {
+    width: 100vw;
+    background-color: #1a2236;
+  }
+
+  .modalContainer {
+    margin: 70px;
+    padding: 0 60px;
+    background-color: white;
+  }
+
+  .closeBtn {
+    position: absolute;
+    top: 25%;
+    right: 10rem;
+  }
+
+  .modalHeading {
+    text-align: left;
+    font: 700 60px/48px "Poppins", sans-serif;
+  }
+
+  .modal-sub-img {
+    margin-top: -0.65rem;
+  }
+
+  .modalParagraph {
+    font: 400 18px "Poppins", sans-serif;
+    padding-top: 40px;
+    color: #1a2236;
+    width: 60%;
+    margin: 0 auto;
+  }
+
+  .modalView .modalBtn1 {
+    width: 22%;
+    display: inline-block;
+    margin-left: 20%;
+  }
+
+  .modalView .modalBtn2 {
+    width: 22% !important;
+    margin-left: 30px;
+  }
+
+  .modalView button object {
+    vertical-align: middle;
+  }
+
+  .modalView button:hover {
+    border: 1px #fff solid;
+    background-color: #1a2236;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  .modalView button:hover object {
+    filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7500%) hue-rotate(10deg) brightness(97%) contrast(109%);
+  }
+
+  .pagination {
+    padding-top: 120px;
+    padding-bottom: 109px;
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+  }
+
+  .pagination a {
+    font: 300 18px/27px "Poppins", sans-serif;
+    color: #1a2236;
+  }
+
+  .modal-arrow-left,
+  .modal-arrow-right {
+    position: absolute;
+    top: 40%;
+    width: 53px;
+    height: 26px;
+  }
+
+  .modal-arrow-left {
+    left: 1%;
+  }
+
+  .modal-arrow-right {
+    right: 1%;
+  }
+}

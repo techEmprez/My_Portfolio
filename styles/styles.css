@@ -214,15 +214,15 @@ button {
 }
 
 .about-languages {
-  background: url("./images/about-img1.svg") right bottom no-repeat;
+  background: url("../images/about-img1.svg") right bottom no-repeat;
 }
 
 .about-framework {
-  background: url("./images/about-img2.svg") right bottom no-repeat;
+  background: url("../images/about-img2.svg") right bottom no-repeat;
 }
 
 .about-skills {
-  background: url("./images/about-img3.svg") right bottom no-repeat;
+  background: url("../images/about-img3.svg") right bottom no-repeat;
 }
 
 .about-list {
@@ -246,7 +246,7 @@ button {
 }
 
 .contact-form-background {
-  background: url("images/image_geometry_1.svg") no-repeat;
+  background: url("../images/image_geometry_1.svg") no-repeat;
   background-size: 35.5%;
   height: 100px;
 }
@@ -339,10 +339,10 @@ footer {
   justify-content: center;
   align-items: center;
   background-image:
-    url("images/mobile_menu_top.png"),
-    url("images/mobile_menu_bottom.png"),
-    url("images/dots.png"),
-    url("images/dots.png");
+    url("../images/mobile_menu_top.png"),
+    url("../images/mobile_menu_bottom.png"),
+    url("../images/dots.png"),
+    url("../images/dots.png");
   background-repeat: no-repeat;
   background-position: left top, left bottom, 75% 15%, 15% 75%;
   background-size: 11.1rem 7.4rem, 32rem 8rem, 4rem, 4rem;
@@ -352,6 +352,11 @@ footer {
   padding: 0.3rem 0;
   font: 400 1.6rem/4.8rem "Poppins", sans-serif;
   color: black;
+}
+
+.pagination,
+.modalBackground {
+  display: none;
 }
 
 /* DESKTOP VERSION STYLING */
@@ -391,7 +396,9 @@ footer {
     justify-content: center;
     align-items: center;
     background: #fff;
-    box-shadow: 0 0.5px 0 #dddfe6;
+    position: fixed;
+    z-index: 1;
+    border-bottom: 1px solid #dee2e6;
   }
 
   .headline-img1 {
@@ -417,6 +424,7 @@ footer {
   .headline-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    margin-top: 100px;
   }
 
   .headline-intro {
@@ -453,7 +461,7 @@ footer {
     grid-template-columns: 1fr 1fr;
     gap: 0;
     grid-area: 1 / 1;
-    background: url("./images/desktop/image_dots_with_teal.svg") no-repeat 100% 100%;
+    background: url("../images/desktop/image_dots_with_teal.svg") no-repeat 100% 100%;
     background-size: 40%;
   }
 
@@ -468,8 +476,8 @@ footer {
 
   .contact-form {
     background:
-      url("./images/desktop/image-geometry_6.svg") no-repeat,
-      url("./images/desktop/image-geometry_7.svg") no-repeat 100% 100%;
+      url("../images/desktop/image-geometry_6.svg") no-repeat,
+      url("../images/desktop/image-geometry_7.svg") no-repeat 100% 100%;
     background-size: 170px;
     display: flex;
     justify-content: center;
@@ -562,11 +570,11 @@ footer {
 
   .projects-container {
     background:
-      url("./images/desktop/image_dots.svg") no-repeat 30% 8%,
-      url("images/desktop/image-geometry_5.svg") no-repeat 0 90%,
-      url("images/desktop/image-geometry_2.svg") no-repeat 48% 52%,
-      url("images/desktop/image-geometry_3.svg") no-repeat 80% 82%,
-      url("images/desktop/image-geometry_4.svg") no-repeat 45% 90%;
+      url("../images/desktop/image_dots.svg") no-repeat 30% 8%,
+      url("../images/desktop/image-geometry_5.svg") no-repeat 0 90%,
+      url("../images/desktop/image-geometry_2.svg") no-repeat 48% 52%,
+      url("../images/desktop/image-geometry_3.svg") no-repeat 80% 82%,
+      url("../images/desktop/image-geometry_4.svg") no-repeat 45% 90%;
     background-size: 7%, 15%, 26%, 35%, 7%;
   }
 
@@ -604,16 +612,16 @@ footer {
     flex-direction: column;
     grid-area: p5;
     position: relative;
-    width: 90%;
+    width: 95%;
     height: 100px;
     top: 50px;
+    left: 20px;
   }
 
   .pb5 {
     position: relative;
     top: 45px;
-    width: 73%;
-    left: 49px;
+    width: 82%;
     order: -1;
   }
 

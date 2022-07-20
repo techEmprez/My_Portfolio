@@ -1,23 +1,23 @@
 # My_Portfolio
 
 A portfolio web page with professional details as regards
-projects done and contact detail.
+projects done and contact details.
 
 ## Built With
 
-- HTML and CSS
+- HTML and CSS and JavaScript
 
 ## Interested to view my Portfolio... Click here
 
-- https://suigeneriz.github.io/My_Portfolio/
+- https://techEmprez.github.io/My_Portfolio/
 
 ## Author
 
 👤 **Choice Osobor**
 
-- GitHub: [@githubhandle](https://github.com/Suigeneriz)
+- GitHub: [@githubhandle](https://github.com/techEmprez)
 - Twitter: [@twitterhandle](https://twitter.com/Suigeneriz_)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/choice-osobor/)
+- LinkedIn: [Choice Osobor](https://www.linkedin.com/in/choice-osobor/)
 
 👤 **Bucur Liviu-Emanuel (Eva)**
 
