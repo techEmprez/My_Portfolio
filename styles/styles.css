@@ -359,6 +359,12 @@ footer {
   display: none;
 }
 
+.emailError {
+  color: #1a2236;
+  font: 400 18px/27px "Poppins", sans-serif;
+  font-weight: bold;
+}
+
 /* DESKTOP VERSION STYLING */
 
 @media (min-width: 768px) {
