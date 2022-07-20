@@ -201,7 +201,7 @@ qs('form').addEventListener('submit', (e) => {
 
   const { value } = qs('#email');
   const emailError = qs('.emailError');
-  
+
   if (value !== value.toLowerCase()) {
     emailError.textContent = 'The email field must be typed in lowercase characters';
   } else {
