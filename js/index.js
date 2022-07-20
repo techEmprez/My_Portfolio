@@ -31,10 +31,7 @@ qs('div.nav-links').addEventListener('click', (e) => {
 });
 
 window.onresize = () => {
-  if (
-    window.innerWidth >= 768 &&
-    qs('div.nav-links').classList.contains('enlarged-menu')
-  ) {
+  if (window.innerWidth >= 768 && qs('div.nav-links').classList.contains('enlarged-menu')) {
     toggleBurger();
   }
 };
@@ -90,24 +87,26 @@ function produceElement(obj) {
   const element = document.createElement(obj.type);
   delete obj.type;
 
-  for (let prop in obj) {
+  Object.entries(obj).forEach(([prop, value]) => {
     if (prop === 'class') {
-      if (typeof obj.class === 'object') {
-        element.classList.add(...obj.class);
+      if (typeof value === 'object') {
+        element.classList.add(...value);
       } else {
-        element.classList.add(obj.class);
+        element.classList.add(value);
       }
     } else {
-      element[prop] = obj[prop];
+      element[prop] = value;
     }
-  }
+  });
 
   return element;
 }
 
 let itterationIndex = 1;
 
-for (let project of projects) {
+projects.forEach((project, itterationIndex) => {
+  itterationIndex += 1;
+
   const article = produceElement({
     type: 'article',
     class: ['projects', `p${itterationIndex}`],
@@ -122,7 +121,7 @@ for (let project of projects) {
   );
   const div = produceElement({
     type: 'div',
-    class: ['project-info', `pb${itterationIndex++}`],
+    class: ['project-info', `pb${itterationIndex}`],
   });
   div.appendChild(
     produceElement({
@@ -136,7 +135,7 @@ for (let project of projects) {
     class: 'language-info',
   });
 
-  for (let language of project.languages) {
+  project.languages.forEach((language) => {
     div2.appendChild(
       produceElement({
         type: 'span',
@@ -144,7 +143,7 @@ for (let project of projects) {
         textContent: language,
       })
     );
-  }
+  });
 
   div.appendChild(div2);
   const a = produceElement({
@@ -163,9 +162,9 @@ for (let project of projects) {
   article.appendChild(div);
 
   projectWrapper.appendChild(article);
-}
+});
 
-for (const button of qsa('.project-view')) {
+qsa('.project-view').forEach((button) => {
   button.addEventListener('click', function (e) {
     e.preventDefault();
     const { target } = e;
@@ -189,7 +188,7 @@ for (const button of qsa('.project-view')) {
       }
     );
   });
-}
+});
 
 qs('.closeBtn').addEventListener('click', function () {
   const modal = qs('.modalView');
