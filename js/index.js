@@ -102,8 +102,6 @@ function produceElement(obj) {
   return element;
 }
 
-let itterationIndex = 1;
-
 projects.forEach((project, itterationIndex) => {
   itterationIndex += 1;
 
@@ -116,7 +114,7 @@ projects.forEach((project, itterationIndex) => {
       type: 'img',
       src: project.image,
       alt: project.imageAlternative,
-      class: 'project-img',
+      class: 'project-img'
     })
   );
   const div = produceElement({
@@ -127,7 +125,7 @@ projects.forEach((project, itterationIndex) => {
     produceElement({
       type: 'h3',
       class: 'project-name',
-      textContent: project.title,
+      textContent: project.title
     })
   );
   const div2 = produceElement({
@@ -140,7 +138,7 @@ projects.forEach((project, itterationIndex) => {
       produceElement({
         type: 'span',
         class: 'language',
-        textContent: language,
+        textContent: language
       })
     );
   });
@@ -150,12 +148,12 @@ projects.forEach((project, itterationIndex) => {
     type: 'a',
     href: '#',
     class: ['button', 'navy-button', 'project-view'],
-    textContent: 'See this project ',
+    textContent: 'See this project '
   });
   a.appendChild(
     produceElement({
       type: 'i',
-      class: ['fa-solid', 'fa-arrow-right'],
+      class: ['fa-solid', 'fa-arrow-right']
     })
   );
   div.appendChild(a);
@@ -165,11 +163,11 @@ projects.forEach((project, itterationIndex) => {
 });
 
 qsa('.project-view').forEach((button) => {
-  button.addEventListener('click', function (e) {
+  button.addEventListener('click', (e) => {
     e.preventDefault();
     const { target } = e;
     const article = target.closest('article');
-    const alt = qs('img', article).alt;
+    const { alt } = qs('img', article);
     const data = projects.find((project) => project.imageAlternative === alt);
 
     const modal = qs('.modalView');
@@ -177,20 +175,22 @@ qsa('.project-view').forEach((button) => {
     modal.scrollIntoView();
     qs('h1', modal).textContent = data.title;
     qsa('li', modal).map((li, i) => {
-      return (li.textContent = data.languages[i]);
+      li.textContent = data.languages[i];
+      return li;
     });
 
     // THIS CHANGES THE IMAGES ON THE MODAL FROM THE PROJECTS
     // qs("img", modal).src = data.image;
     qsa('img:not(.closeBtn, .modal-arrow-left, .modal-arrow-right)', modal).map(
       (img) => {
-        return (img.src = data.image);
+        img.src = data.image;
+        return img;
       }
     );
   });
 });
 
-qs('.closeBtn').addEventListener('click', function () {
+qs('.closeBtn').addEventListener('click', () => {
   const modal = qs('.modalView');
   modal.classList.add('no-display');
   qs('header').scrollIntoView({ behavior: 'smooth' });
