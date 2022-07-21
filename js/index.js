@@ -196,6 +196,8 @@ qs('.closeBtn').addEventListener('click', () => {
   qs('header').scrollIntoView({ behavior: 'smooth' });
 });
 
+// FORM VALIDATION
+
 qs('form').addEventListener('submit', (e) => {
   e.preventDefault();
 
@@ -209,3 +211,35 @@ qs('form').addEventListener('submit', (e) => {
     qs('form').submit();
   }
 });
+
+// LOCAL STORAGE
+
+const preserve = {
+  name: '',
+  email: '',
+  message: '',
+};
+
+qs('#name').addEventListener('input', (e) => {
+  preserve.name = e.target.value;
+  localStorage.setItem('data', JSON.stringify(preserve));
+});
+
+qs('#email').addEventListener('input', (e) => {
+  preserve.email = e.target.value;
+  localStorage.setItem('data', JSON.stringify(preserve));
+});
+
+qs('#message').addEventListener('input', (e) => {
+  preserve.message = e.target.value;
+  localStorage.setItem('data', JSON.stringify(preserve));
+});
+
+let storage = localStorage.getItem('data');
+if (storage) {
+  storage = JSON.parse(storage);
+
+  qs('#name').value = storage.name;
+  qs('#email').value = storage.email;
+  qs('#message').value = storage.message;
+}
