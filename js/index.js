@@ -31,10 +31,7 @@ qs('div.nav-links').addEventListener('click', (e) => {
 });
 
 window.onresize = () => {
-  if (
-    window.innerWidth >= 768 &&
-    qs('div.nav-links').classList.contains('enlarged-menu')
-  ) {
+  if (window.innerWidth >= 768 && qs('div.nav-links').classList.contains('enlarged-menu')) {
     toggleBurger();
   }
 };
@@ -118,7 +115,7 @@ projects.forEach((project, itterationIndex) => {
       src: project.image,
       alt: project.imageAlternative,
       class: 'project-img',
-    })
+    }),
   );
   const div = produceElement({
     type: 'div',
@@ -129,7 +126,7 @@ projects.forEach((project, itterationIndex) => {
       type: 'h3',
       class: 'project-name',
       textContent: project.title,
-    })
+    }),
   );
   const div2 = produceElement({
     type: 'div',
@@ -142,7 +139,7 @@ projects.forEach((project, itterationIndex) => {
         type: 'span',
         class: 'language',
         textContent: language,
-      })
+      }),
     );
   });
 
@@ -157,7 +154,7 @@ projects.forEach((project, itterationIndex) => {
     produceElement({
       type: 'i',
       class: ['fa-solid', 'fa-arrow-right'],
-    })
+    }),
   );
   div.appendChild(a);
   article.appendChild(div);
@@ -188,7 +185,7 @@ qsa('.project-view').forEach((button) => {
       (img) => {
         img.src = data.image;
         return img;
-      }
+      },
     );
   });
 });
