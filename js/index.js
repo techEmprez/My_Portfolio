@@ -199,6 +199,22 @@ qs('.closeBtn').addEventListener('click', () => {
   qs('header').scrollIntoView({ behavior: 'smooth' });
 });
 
+// FORM VALIDATION
+
+qs('form').addEventListener('submit', (e) => {
+  e.preventDefault();
+
+  const { value } = qs('#email');
+  const emailError = qs('.emailError');
+
+  if (value !== value.toLowerCase()) {
+    emailError.textContent = 'The email field must be typed in lowercase characters';
+  } else {
+    emailError.textContent = '';
+    qs('form').submit();
+  }
+});
+
 // LOCAL STORAGE
 
 const preserve = {
