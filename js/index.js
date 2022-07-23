@@ -219,13 +219,13 @@ qs("#email").addEventListener("input", function (e) {
   // console.log(JSON.parse(localStorage.getItem("data")));
 });
 
-// qs("#message").addEventListener("input", function (e) {
+qs("#message").addEventListener("input", function (e) {
   preserve.message = e.target.value;
   localStorage.setItem("data", JSON.stringify(preserve));
   // console.log(JSON.parse(localStorage.getItem("data")));
 });
 
-// let storage = localStorage.getItem("data");
+let storage = localStorage.getItem("data");
 if (storage) {
   storage = JSON.parse(storage);
 
