@@ -9,7 +9,7 @@ projects done and contact details.
 
 ## Interested to view my Portfolio... Click here
 
-- [Live Demo](https://techEmprez.github.io/My_Portfolio/)
+- [Live Demo](https://techemprez-portfolio.netlify.app/)
 
 ## Author
 
